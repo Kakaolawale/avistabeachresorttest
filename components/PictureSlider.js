@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const PictureSlider = () => {
   return (
-    <div className="relative pb-8 mb-5 mx-4 rounded-xl backdrop-blur-lg bg-gradient-to-b from-avista via-avista2 overflow-hidden">
+    <div className="relative pb-4 mt-8 mb-5 mx-4  backdrop-blur-lg  overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <motion.main
