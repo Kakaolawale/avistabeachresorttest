@@ -7,6 +7,8 @@ import PictureSlider3 from '../components/PictureSlider3'
 import PageSection1 from '../components/PageSection1'
 import ResortSection from '../components/ResortSection'
 import Team from '../components/Team'
+import HeroBanner from '../components/HeroBanner'
+
 
 
 import VideoBanner from '../components/VideoBanner'
@@ -32,43 +34,30 @@ export default function Home() {
 
       
      < motion.main
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            >
-      
-      
-      
-      
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      >
+      <div className='mt-16 md:mt-0'>
+      <VideoBanner />
       <PictureSlider />
+      <br />
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />
       </div>
       <div className='flex mb-8 items-center justify-center'>
       <CircleVector />
       </div>
-      <div className="container mx-auto">
-      <BeachDescription 
-      name="Avista Beach Resort"
-      imageSrc="/images/avistahero5.jpg"
-      description="Welcome to Avista Beach Resort, where paradise meets luxury. Nestled along the pristine shores of a sun-kissed beach, our resort offers a blissful escape from the ordinary. With an array of exquisite amenities and breathtaking views, Avista Beach Resort is the ultimate destination for your dream beach getaway."
-      hasWifi={true}
-      hasPool={true}
-      hasBeachUmbrellas={true}
-      hasRestaurant={true}
-      hasSpa={true}
-      />
-      </div>
-      <VideoBanner />
       <PictureSlider3 />
+      <br />
+      <HeroBanner />
+      <br />
       <div className="flex items-center justify-center h-48">
       <VerticalLine />
       </div>
       <div className='flex mb-8 items-center justify-center'>
       <CircleVector />
       </div>
-      <ResortSection />
-      
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />
       </div>
@@ -88,9 +77,8 @@ export default function Home() {
       <SectionBanner />
       <Testimonial />
       <MapSection />
-      </motion.main>
-       
       </div>
-     
-  )
-}
+      </motion.main>
+      </div>
+       )
+       }

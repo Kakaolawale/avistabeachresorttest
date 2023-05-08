@@ -5,14 +5,16 @@ import LastSection from './LastSection'
 import HeroBanner from './HeroBanner'
 
 
+
 const Layouts = ({children}) => {
   return (
     <div  className='bg-avista'>
       <Navbar />
-      <HeroBanner />
-      
+     
+   
       {children}
       <LastSection />
+      
       <Footer />
     </div>
   )

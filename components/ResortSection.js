@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+
 const images = [
   'images/avistahero6.jpg',
   'images/avistahero8.jpg',

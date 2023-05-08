@@ -16,7 +16,7 @@ const PictureSlider2 = () => {
 
 
   return (
-        <div className='mt-20 ml-8 mr-8 bg-gradient-to-bl from-avista via-avista2 rounded-2xl p-5 text-avista3'>
+        <div className='mt-4 bg-gradient-to-bl from-avista via-avista2 rounded-2xl p-5 text-avista3'>
             <motion.main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

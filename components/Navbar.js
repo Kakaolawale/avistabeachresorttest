@@ -13,20 +13,24 @@ function Navbar() {
  
 
   return (
-    <nav className="w-full top-0 h-25 shadow-lg fixed lg:mb-8 backdrop-blur-sm bg-avista opacity-100 hover:bg-avista2 ...">
+    <nav className="transition-opacity duration-500 w-full top-0 h-25 shadow-lg fixed lg:mb-8 backdrop-blur-sm bg-avista opacity-100 z-50 hover:bg-avista2 ...">
         <motion.main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             >
-      <div className="justify-between px-4 mx-auto lg:max-w-8xl md:items-center md:flex sm:px-8">
+        <div className="justify-between px-4 mx-auto lg:max-w-8xl md:items-center md:flex sm:px-8">
                 <div className={`mt-top-adjusted ${navbar ? 'adjust-down' : ''}`}>
                     <div className="flex items-center justify-between py-5">
-                    <a href="/" className="flex items-center">
-        <Image src="/images/avistalogowhite.png" width={80} height={30} alt="Space1tech Logo" />
-       
-        
-    </a>
+        <a 
+        href="/" 
+        className="flex items-center">
+        <Image 
+        src="/images/avistalogowhite.png" 
+        width={80} 
+        height={30} 
+        alt="Avista Beach Resort Logo" />
+       </a>
                         <div className="md:hidden text-avista3">
                             <button
                                 className="pt-2 rounded-md outline-none focus:border-avista3 focus:border"
@@ -115,7 +119,11 @@ function Navbar() {
             </div>
             </motion.main>
     </nav>
+
+    
   )
 }
 
 export default Navbar
+
+

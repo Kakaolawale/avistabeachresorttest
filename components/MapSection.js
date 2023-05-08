@@ -5,7 +5,7 @@ const MapSection = () => {
     <section className=" m-4 rounded-3xl">
       <div className="container mx-auto py-8">
         <div className="w-full mx-auto">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4 text-avista3 text-center tracking-tight font-bold">MAP US</h2>
+          <h2 className="text-3xl  text-gray-800 mb-4 text-avista3 text-center tracking-tight font-bold">MAP US</h2>
           <div className="relative h-80">
             <iframe
               className="absolute bg-avista2 rounded-3xl inset-0 w-full h-full"

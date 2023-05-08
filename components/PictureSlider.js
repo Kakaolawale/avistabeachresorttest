@@ -1,9 +1,10 @@
 
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const PictureSlider = () => {
   return (
-    <div className="relative pb-4 mt-8 mb-5 mx-4  backdrop-blur-lg  overflow-hidden">
+    <div className="relative  mt-4 bg-avista2 rounded-3xl pb-4 mb-5  backdrop-blur-lg overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <motion.main
@@ -13,7 +14,7 @@ const PictureSlider = () => {
             className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-2 md:mt-16 lg:mt-20 xl:mt-28"
           >
             
-            <div className="block pt-8 lg:mr-8 mr-10 pr-20 sm:text-center text-space1-4 lg:text-left">
+            <div className="block pt-4 lg:mr-8 mr-10 pr-20 text-space1-4 lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-avista3 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline text-space1-2">Welcome to</span>
                 <span className="block text-indigo-600 xl:inline">
@@ -43,14 +44,15 @@ const PictureSlider = () => {
           </motion.div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <motion.img
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 1 }}
+          
+          <Image
             className="h-56 mb-4 rounded-xl w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="/images/avistahero4.jpg"
             alt="Next.js App"
-          />
+            width={1000}
+            height={500} 
+            />
+            
         </div>
       </div>
     </div>
