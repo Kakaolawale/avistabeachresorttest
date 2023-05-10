@@ -48,6 +48,7 @@ export default function Home() {
       <div className='flex mb-8 items-center justify-center'>
       <CircleVector />
       </div>
+      
       <PictureSlider3 />
       <br />
       <HeroBanner />
@@ -64,7 +65,7 @@ export default function Home() {
       <div className='flex items-center justify-center'>
       <CircleVector />
       </div>
-      <PictureSlider2 />
+      
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />
       </div>

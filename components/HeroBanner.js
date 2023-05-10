@@ -33,7 +33,7 @@ const HeroBanner = () => {
   }, []);
 
   return (
-    <div className="relative mb-8 bg-avista2 ">
+    <div className="relative bg-avista2 ">
       {images.map((image, index) => (
         <div
           key={index}

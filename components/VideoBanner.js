@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoBanner = () => {
   return (
-    <div className="relative   px-8">
+    <div className="relative px-8">
       
       <div className="w-full pb-[70.25%]">
         <video
