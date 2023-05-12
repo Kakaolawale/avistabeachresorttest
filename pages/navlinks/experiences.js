@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const experiences = () => {
   const images = [
-    '/images/avistahero1.jpg',
+    '/images/avistabeach1.jpg',
     '/images/avistahero4.jpg',
     '/images/avistahero7.jpg',
-    '/images/avistahero9.jpg',
+    '/images/avistahero8.jpg',
     '/images/avistahero5.jpg',
   ];
 
@@ -84,7 +84,7 @@ const experiences = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-16 px-4 text-avista3">
+    <div className="bg-gradient-to-b from-avista via-avista2 mt-20 pt-8 py-16 px-2 text-avista3">
 < motion.main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -93,7 +93,7 @@ const experiences = () => {
 
 
       
-      <div className="bg-avista2 px-8 rounded-xl pb-4 pt-4 container mx-auto">
+      <div className="px-8 rounded-xl pb-4 pt-4 container mx-auto">
         <h2 className="text-3xl font-bold text-center tracking-tight mb-8">EXPERIENCES</h2>
         <p className="mt-2 mb-4">Relax, enjoy the breeze, bathe in the sun and experience 
         the love of nature by our poolside. Enjoy the private cabanas and gazebos and 
@@ -117,8 +117,8 @@ const experiences = () => {
           </button>
           <img
             src={images[currentIndex]}
-            alt="Beach resort"
-            className="w-full h-64 object-cover rounded-lg shadow-lg"
+            alt="Avista beach resort"
+            className="w-full h-64 lg:h-screen lg-px-2 lg-mx-2 object-cover rounded-lg shadow-lg"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">

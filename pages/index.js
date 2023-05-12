@@ -52,19 +52,6 @@ export default function Home() {
       <PictureSlider3 />
       <br />
       <HeroBanner />
-      <br />
-      <div className="flex items-center justify-center h-48">
-      <VerticalLine />
-      </div>
-      <div className='flex mb-8 items-center justify-center'>
-      <CircleVector />
-      </div>
-      <div className="flex items-center mt-4 justify-center h-48">
-      <VerticalLine />
-      </div>
-      <div className='flex items-center justify-center'>
-      <CircleVector />
-      </div>
       
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />

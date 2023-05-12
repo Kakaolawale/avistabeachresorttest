@@ -49,13 +49,13 @@ const gallery = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             >
-    <div className="pt-4 bg-gradient-to-br from-avista via-avista2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8">
+    <div className="mt-20 pt-8 mb-8 bg-gradient-to-br from-avista via-avista2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8">
        {images.map((image) => (
         <img
           src={image}
           alt="Room"
           key={image}
-          className="w-full h-64 object-cover px-4 rounded-xl cursor-pointer"
+          className="w-full pt-2 pb-4 h-64 object-cover px-4 rounded-xl cursor-pointer"
           onClick={() => enlargeImage(image)}
         />
       ))}

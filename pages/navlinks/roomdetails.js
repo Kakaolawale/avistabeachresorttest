@@ -7,7 +7,7 @@ import RoomDetails5 from '../../components/RoomDetails5';
 
 const roomdetails = () => {
   return (
-    <div>
+    <div className='mt-20 pt-20'>
       <RoomDetails />
       <RoomDetails2 />
       <RoomDetails3 />

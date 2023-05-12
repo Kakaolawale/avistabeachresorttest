@@ -1,65 +1,94 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
-
-const images = [
-  {
-    src: "/images/avistaroom1.jpg",
-    title: "Image 1",
-    description: "Description of image 1",
-  },
-  {
-    src: "/images/avistahero7.jpg",
-    title: "Image 2",
-    description: "Description of image 2",
-  },
-  {
-    src: "/images/avistahero5.jpg",
-    title: "Image 3",
-    description: "Description of image 3",
-  },
-];
+import { useState, useEffect } from 'react';
 
 const HeroBanner = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const slides = [
+    {
+      id: 1,
+      imageUrl: '/images/avistadaypass1.jpg',
+      title: 'Welcome to Avista Beach Resort',
+      description: 'Experience luxury at its finest',
+    },
+    {
+      id: 2,
+      imageUrl: '/images/avistadaypass2.jpg',
+      title: 'Beautiful Ocean Views',
+      description: 'Relax and enjoy the scenery',
+    },
+    {
+      id: 3,
+      imageUrl: '/images/avistadaypass3.jpg',
+      title: 'Unwind in our spacious rooms',
+      description: 'Modern design with comfort in mind',
+    },
+    {
+      id: 4,
+      imageUrl: '/images/avistabeach1.jpg',
+      title: 'Unwind in our spacious rooms',
+      description: 'Modern design with comfort in mind',
+    },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+      setCurrentSlide((currentSlide + 1) % slides.length);
     }, 5000);
-
     return () => clearInterval(interval);
-  }, []);
+  }, [currentSlide, slides.length]);
 
   return (
-    <div className="relative bg-avista2 ">
-      {images.map((image, index) => (
+    <div className="relative mx-2 text-avista3 h-screen">
+      {slides.map((slide, index) => (
         <div
-          key={index}
-          className={`absolute w-full ${
-            index === activeIndex ? "opacity-100" : "opacity-0"
-          } transition-opacity duration-1000`}
+          key={slide.id}
+          className={`absolute  top-0 left-0 w-full h-full transition-all duration-500 ease-in-out ${
+            index === currentSlide ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{
+            backgroundImage: `url(${slide.imageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
         >
-          <Image
-            src={image.src}
-            alt={image.title}
-            className="w-full"
-           
-            objectFit="cover"
-            width={500}
-            height={500}
-            
-          />
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-avista bg-opacity-75">
-            <h1 className="text-white text-3xl font-bold">{image.title}</h1>
-            <p className="text-white text-lg">{image.description}</p>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            <h1 className="text-4xl font-bold mb-4">{slide.title}</h1>
+            <p className="text-lg mb-8">{slide.description}</p>
+            <button className="bg-avista font-bold text-avista2 py-3 px-8 rounded-full shadow-lg">
+              Book Now
+            </button>
           </div>
         </div>
       ))}
+      <button
+        className="absolute top-1/2 transform -translate-y-1/2 left-0 px-4 py-8 rounded-full bg-black bg-opacity-50 text-white z-10"
+        onClick={() =>
+          setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1)
+        }
+      >
+        Prev
+      </button>
+      <button
+        className="absolute top-1/2 transform -translate-y-1/2 right-0 px-4 py-8 rounded-full bg-black bg-opacity-50 text-white z-10"
+        onClick={() => setCurrentSlide((currentSlide + 1) % slides.length)}
+      >
+        Next
+      </button>
+      <div className="absolute  bottom-0 left-0 w-full h-16 bg-black bg-opacity-50 flex items-center justify-center">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`w-3 h-3 rounded-full mx-2 cursor-pointer transition-all duration-300 ${
+              index === currentSlide ? 'bg-white' : 'bg-gray-300'
+            }`}
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default HeroBanner;
+export default HeroBanner
+
 

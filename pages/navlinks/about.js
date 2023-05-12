@@ -22,14 +22,14 @@ const about = () => {
   `;
 
   return (
-    <div className="bg-gradient-to-br from-avista via-avista2 text-avista3 pb-8 px-4 pt-8">
+    <div className="lg:w-full lg:mx-2 mx-2 px-2 mt-20 bg-gradient-to-br from-avista via-avista2 text-avista3 pb-8 pt-20">
       < motion.main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             >
-      <div className="bg-avista2 px-8 rounded-2xl py-8 container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8 tracking-tight bg-avista m-3 p-4 rounded-2xl text-avista2">AVISTA</h2>
+      <div className="bg-gradient-to-br from-avista via-avista2 px-8 rounded-2xl py-8 container mx-auto">
+        <h2 className="text-3xl font-extrabold text-center mb-8 tracking-tight bg-avista m-3 p-4 rounded-2xl text-avista2">AVISTA</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Our History</h3>

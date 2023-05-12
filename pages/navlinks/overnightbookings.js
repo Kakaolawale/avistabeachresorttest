@@ -52,11 +52,21 @@ const BookingForm = () => {
   }
 
   return (
-    <div className='lg:mt-4 bg-gradient-to-bl from-avista via-avista2 mx-4  rounded-3xl mt-4 sm:mb-30 pt-10'>
+    <div className='mt-20 bg-gradient-to-bl from-avista via-avista2 rounded-3xl sm:mb-30 pt-10'>
       <RoomSection />
+      <div className="mx-4 mb-4 font-bold text-base">
+      <h1 className="text-avista3 text-center">
+       1- Fill the form below to make reservation 
+        and click BookNow button.
+      </h1>
+      <h1 className="text-avista3 text-center mt-2">
+       2- Fill up the next step and continue by asking for bank 
+        account to make payment by clicking PayNow button.
+      </h1>
+      </div>
     <form onSubmit={handleSubmit} className='flex flex-col md:flex-row shadow-xl backdrop-blur-lg items-center md:items-center 
-    mx-8 my-4 rounded-lg md:mx-4 md:rounded-2xl bg-gradient-to-br from-avista via-avista2
-     py-4 mt-4 text-avista3' >
+    my-4 rounded-lg md:mx-4 md:rounded-2xl bg-gradient-to-br from-avista via-avista2
+     py-4  px-18 mt-4 text-avista3' >
       
       <label className='md:mx-8 my-3 font-bold'>
         <span className='mr-3'>CHECK-IN DATE</span>

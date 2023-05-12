@@ -21,23 +21,24 @@ const Team = () => {
                 <a href="#" className="relative block">
                     <img 
                     alt="profil" 
-                    src="/images/avistateamama.jpg" 
+                    src="/images/avistateamjimmy.jpg" 
                     className="mx-auto object-cover rounded-3xl h-40 w-35 dark:border-gray-800"/>
                 </a>
             </div>
             <div className="px-8 py-4 pt-24 bg-avista5 rounded-lg shadow dark:bg-gray-800">
                 <div className="text-center">
                     <p className="text-2xl font-bold text-gray-800 dark:text-white">
-                       Kaka Olawale David
+                       Jimmy Ubong Okon
                     </p>
                     <p className="text-xl font-light text-gray-500 dark:text-gray-200">
-                        Head Tech/Media 
+                        Head Chef
                     </p>
                     <p className="py-4 mx-auto font-regular text-gray-500 text-md w-60 dark:text-gray-400">
-                        Engr. Kaka Olawale David is a young Nigerian fast 
-                        rising talented software engineer and visual designer. With over 6 years experience, he joins
-                        the Avista Beach Resort Team to create web and media technologies that meets up to solving
-                        our client's real life challenges alongside promoting the team vision to meet up global standard.
+                    Jimmy Ubong is a trained CHEF both Intercontinental and 
+                    Local Dishes, with 16yrs experience. I joined Avista 
+                    Beach Resort Team to showcase my skills in what I 
+                    love doing.
+
                     </p>
                 </div>
                 <div className="flex items-center justify-between w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
@@ -51,23 +52,22 @@ const Team = () => {
                 <a href="#" className="relative block">
                     <img 
                     alt="profil" 
-                    src="/images/avistateamkaka.jpg" 
+                    src="/images/avistateamama.jpg" 
                     className="mx-auto object-cover rounded-3xl h-40 w-35 dark:border-gray-800"/>
                 </a>
             </div>
             <div className="px-8 py-4 pt-24 bg-avista5 rounded-lg shadow dark:bg-gray-800">
                 <div className="text-center">
                     <p className="text-2xl font-bold text-gray-800 dark:text-white">
-                       Kaka Olawale David
+                       Jarikre Ivie Treasure
                     </p>
                     <p className="text-xl font-light text-gray-500 dark:text-gray-200">
-                        Head Tech/Media 
+                        Head Front Office
                     </p>
                     <p className="py-4 mx-auto font-regular text-gray-500 text-md w-60 dark:text-gray-400">
-                        Engr. Kaka Olawale David is a young Nigerian fast 
-                        rising talented software engineer and visual designer. With over 6 years experience, he joins
-                        the Avista Beach Resort Team to create web and media technologies that meets up to solving
-                        our client's real life challenges alongside promoting the team vision to meet up global standard.
+                    Jarikre Ivie Treasure, Head of Front Office. Avista Beach Resort.  Treasure is a very skilled 
+                    and experienced Nigerian front desk. She’s interested in customer’s well being and satisfaction 
+                    and the growth of the organization at large.
                     </p>
                 </div>
                 <div className="flex items-center justify-between w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
@@ -84,7 +84,7 @@ const Team = () => {
                 <a href="#" className="relative block">
                     <img 
                     alt="profil" 
-                    src="/images/avistateamjimmy.jpg" 
+                    src="/images/avistateamkaka.jpg" 
                     className="mx-auto object-cover rounded-3xl h-40 w-35 dark:border-gray-800"/>
                 </a>
             </div>
@@ -126,16 +126,17 @@ const Team = () => {
             <div className="px-8 py-4 pt-24 bg-avista5 rounded-lg shadow dark:bg-gray-800">
                 <div className="text-center">
                     <p className="text-2xl font-bold text-gray-800 dark:text-white">
-                        Thierry Halliday
+                        Magnus Chinedum Nnanna
                     </p>
                     <p className="text-xl font-regular text-gray-500 dark:text-gray-200">
-                        CTO
+                       Supervisor/Head Maintenance
                     </p>
                     <p className="py-4 mx-auto font-regular text-gray-500 text-md w-60 dark:text-gray-400">
-                    Engr. Kaka Olawale David is a young Nigerian fast 
-                        rising talented software engineer and visual designer. With over 6 years experience, he joins
-                        the Avista Beach Resort Team to create web and media technologies that meets up to solving
-                        our client's real life challenges alongside promoting the team vision to meet up global standard.
+                    Magnus Chinedum Nnanna.  Supervisor and Head of Maintenance Avista Beach Resort.  Has 
+                    experience in Hospitality business over the years , joined Avista Resort to ensure a 
+                    Serene and Neat environment for the best of relaxation to meet up with the demands 
+                    of clients.
+
                     </p>
                 </div>
 

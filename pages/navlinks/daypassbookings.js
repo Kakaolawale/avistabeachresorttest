@@ -93,7 +93,7 @@ const daypassbookings = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             >
- <div className="bg-avista2 mx-4 pb-8 sm:px-8 rounded-lg shadow-lg p-6 text-avista3">
+ <div className="bg-avista2 mt-20 mx-4 pb-8 sm:px-8 rounded-lg shadow-lg p-6 text-avista3">
  <h2 className="text-3xl font-extrabold text-gray-900 text-center tracking-tight mb-8">DAYPASS PRICES</h2>
       {activities.map((activity, index) => (
         <div

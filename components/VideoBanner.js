@@ -6,8 +6,8 @@ const VideoBanner = () => {
       
       <div className="w-full pb-[70.25%]">
         <video
-          src="videos/avistaherovideo1.mp4"
-          title="Video Banner"
+          src="videos/avistaherovideo2.mp4"
+          title="Avista Intro Video"
           className="absolute bg-avista2 w-full inset-0 h-full lg:mb-4 object-cover"
           autoPlay
           loop

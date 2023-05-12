@@ -41,7 +41,12 @@ const RoomDetails = () => {
   };
 
   return (
-    <div className="relative mx-4 mt-4 mb-4 rounded-3xl text-avista3">
+    <div className="relative mt-4 mx-2 mb-4 rounded-3xl font-bold text-avista2">
+      <div className='text-center font-bold tracking-tight text-4xl'>
+        <h1>
+          ROOM DETAILS
+        </h1>
+      </div>
       <div className="flex items-center justify-between">
         <button
           className="absolute inset-y-0 left-0 flex items-center justify-center w-12 h-12 text-white bg-gray-800 bg-opacity-50 rounded-full"
