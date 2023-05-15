@@ -5,12 +5,12 @@ import PictureSlider from '../components/PictureSlider'
 import PictureSlider2 from '../components/PictureSlider2'
 import PictureSlider3 from '../components/PictureSlider3'
 import PageSection1 from '../components/PageSection1'
-import ResortSection from '../components/ResortSection'
+import CanteenSlider from '../components/CanteenSlider'
 import Team from '../components/Team'
 import HeroBanner from '../components/HeroBanner'
 
 
-
+import VideoDisplay from '../components/VideoDisplay'
 import VideoBanner from '../components/VideoBanner'
 import SectionBanner3 from '../components/SectionBanner3'
 import Testimonial from '../components/Testimonial'
@@ -41,7 +41,7 @@ export default function Home() {
       <div className='mt-16 md:mt-0'>
       <VideoBanner />
       <PictureSlider />
-      <br />
+      <CanteenSlider />
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />
       </div>
@@ -52,7 +52,7 @@ export default function Home() {
       <PictureSlider3 />
       <br />
       <HeroBanner />
-      
+      <VideoDisplay src="/images/avistaroom14.jpg" />
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />
       </div>
@@ -63,6 +63,7 @@ export default function Home() {
       <PageSection1 />
       <Team />
       <SectionBanner />
+      
       <Testimonial />
       <MapSection />
       </div>

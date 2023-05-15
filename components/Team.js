@@ -92,7 +92,7 @@ const Team = () => {
             <div className="px-8 py-4 pt-24 bg-avista5 rounded-lg shadow dark:bg-gray-800">
                 <div className="text-center">
                     <p className="text-2xl font-bold text-gray-800 dark:text-white">
-                        Charlie
+                      Kaka Olawale David
                     </p>
                     <p className="text-xl font-regular text-gray-500 dark:text-gray-200">
                         Lead dev

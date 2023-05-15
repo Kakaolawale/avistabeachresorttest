@@ -5,25 +5,37 @@ const HeroBanner = () => {
     {
       id: 1,
       imageUrl: '/images/avistadaypass1.jpg',
-      title: 'Welcome to Avista Beach Resort',
+      title: 'WELCOME TO AVISTA BEACH RESORT',
       description: 'Experience luxury at its finest',
     },
     {
       id: 2,
       imageUrl: '/images/avistadaypass2.jpg',
-      title: 'Beautiful Ocean Views',
+      title: 'BEAUTIFUL OCEAN VIEWS',
       description: 'Relax and enjoy the scenery',
     },
     {
       id: 3,
       imageUrl: '/images/avistadaypass3.jpg',
-      title: 'Unwind in our spacious rooms',
+      title: 'THE BEST PLACE TO ALWAYS BE',
       description: 'Modern design with comfort in mind',
     },
     {
       id: 4,
-      imageUrl: '/images/avistabeach1.jpg',
-      title: 'Unwind in our spacious rooms',
+      imageUrl: '/images/avistaroom1.jpg',
+      title: 'UNWIND IN OUR SPACOIUS ROOMS',
+      description: 'Modern design with comfort in mind',
+    },
+    {
+      id: 5,
+      imageUrl: '/images/avistaroom2.jpg',
+      title: 'EXPERIENCE GLITS AND MODERN ARTS',
+      description: 'Modern design with comfort in mind',
+    },
+    {
+      id: 6,
+      imageUrl: '/images/avistaroom3.jpg',
+      title: 'STAY SERVICED 247',
       description: 'Modern design with comfort in mind',
     },
   ];
@@ -66,13 +78,13 @@ const HeroBanner = () => {
           setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1)
         }
       >
-        Prev
+       
       </button>
       <button
         className="absolute top-1/2 transform -translate-y-1/2 right-0 px-4 py-8 rounded-full bg-black bg-opacity-50 text-white z-10"
         onClick={() => setCurrentSlide((currentSlide + 1) % slides.length)}
       >
-        Next
+      
       </button>
       <div className="absolute  bottom-0 left-0 w-full h-16 bg-black bg-opacity-50 flex items-center justify-center">
         {slides.map((slide, index) => (

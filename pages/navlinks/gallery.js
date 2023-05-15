@@ -28,7 +28,7 @@ const gallery = () => {
     '/images/avistahero1.jpg',
     '/images/avistahero2.jpg',
     '/images/avistahero3.jpg',
-    '/images/avistahero4.jpg',
+    '/images/avistadaypass1.jpg',
     '/images/avistahero5.jpg',
     '/images/avistahero6.jpg',
     '/images/avistahero7.jpg',

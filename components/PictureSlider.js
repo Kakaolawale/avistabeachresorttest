@@ -47,7 +47,7 @@ const PictureSlider = () => {
           
           <Image
             className="h-56 mb-4 rounded-xl w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="/images/avistahero4.jpg"
+            src="/images/avistadaypass2.jpg"
             alt="Next.js App"
             width={1000}
             height={500} 

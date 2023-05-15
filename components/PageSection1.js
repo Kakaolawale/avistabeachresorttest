@@ -3,13 +3,13 @@ import React from 'react';
 const HomePageSection = () => {
   const sections = [
     {
-      imageSrc: "/images/avistahero5.jpg",
+      imageSrc: "/images/avistabeach1.jpg",
       heading: "AN EXPERIENCE BEYOND THE SEA",
       text: "Though we are relatively new, our love to services and humanity is the core of our existance."
     },
     {
-      imageSrc: "/images/avistahero6.jpg",
-      heading: "DISCOVERY A NEW LUXURY BEACH HOTEL",
+      imageSrc: "/images/avistaroom4.jpg",
+      heading: "DISCOVER A NEW LUXURY BEACH HOTEL",
       text: "With over 50 project/events and getaway done at the resort, we are fastly becoming a people's favourite."
     },
     {
