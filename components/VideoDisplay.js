@@ -16,11 +16,11 @@ const VideoDisplay = ({ src }) => {
       <div className="absolute inset-0 bg-black opacity-25"></div>
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="max-w-lg mx-auto px-4">
-          <h1 className="text-4xl font-bold text-avista leading-tight mb-6">
-            Your hero banner title goes here
+          <h1 className="text-4xl font-bold text-avista2 leading-tight mb-6">
+            Exotic Rooms
           </h1>
           <p className="text-lg  leading-relaxed mb-12">
-            Your hero banner description goes here
+            Enjoy your stay in maximum comfort.
           </p>
           <a
             href="#"

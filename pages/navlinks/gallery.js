@@ -19,12 +19,7 @@ const gallery = () => {
     '/images/avistaroom12.jpg',
     '/images/avistaroom13.jpg',
     '/images/avistaroom14.jpg',
-    '/images/avistaroom15.jpg',
-    '/images/avistaroom16.jpg',
-    '/images/avistaroom17.jpg',
-    '/images/avistaroom18.jpg',
-    '/images/avistaroom19.jpg',
-    '/images/avistaroom20.jpg',
+    
     '/images/avistahero1.jpg',
     '/images/avistahero2.jpg',
     '/images/avistahero3.jpg',

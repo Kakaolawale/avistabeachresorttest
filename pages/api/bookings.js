@@ -1,26 +1,55 @@
+import nodemailer from 'nodemailer';
+import multer from 'multer';
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { checkInDate, checkOutDate, numberOfGuests, roomType } = req.body;
-    // Save booking data to database or external service
-    console.log("Received booking:", req.body);
-    // Connect to MongoDB
-    //const client = await MongoClient.connect(process.env.MONGODB_URI);
-   // const db = client.db(process.env.MONGODB_DB);
+    const { checkInDate, 
+      checkOutDate, 
+      numberOfGuests, 
+      numberOfRooms, 
+      roomType, 
+      fullName,
+      email,
+      phoneNumber,
+      address,
+      country, } = req.body;
 
-    // Insert booking data into collection
-   // const bookingsCollection = db.collection('bookings');
-   //const result = await bookingsCollection.insertOne({
-      //checkInDate,
-      //checkOutDate,
-      //numberOfGuests,
-     // roomType,
-   // });
+    // Create a transporter with Gmail SMTP details
+    const transporter = nodemailer.createTransport({
+      service: 'Gmail',
+        auth: {
+          user: 'space1empire@gmail.com',
+          pass: 'fjvjfoiurjtgnems',
+      },
+    });
 
-    // Close database connection
-    //client.close();
+    // Prepare the email message
+    const message = {
+      from: 'space1empire@gmail.com',
+      to: 'dukeofindustry@gmail.com', // Set the recipient email as your own email address
+      subject: 'New Booking Form Submission',
+      text: `
+        Check-in Date: ${checkInDate}
+        Check-out Date: ${checkOutDate}
+        Number of Guests: ${numberOfGuests}
+        Number of Rooms: ${numberOfRooms}
+        Room Type: ${roomType}
+        Full Name: ${fullName}
+        Email: ${email}
+        Phone Number: ${phoneNumber}
+        Address: ${address}
+        Country: ${country}
+      `,
+    };
 
-
-    res.status(200).json({ message: 'Booking successful!' });
+    try {
+      // Send the email
+      await transporter.sendMail(message);
+      res.status(200).json({ message: 'Booking successful!' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({ message: 'An error occurred while sending the email.' });
+    }
   } else {
     res.status(405).json({ message: 'Method not allowed' });
   }

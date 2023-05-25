@@ -52,7 +52,7 @@ export default function Home() {
       <PictureSlider3 />
       <br />
       <HeroBanner />
-      <VideoDisplay src="/images/avistaroom14.jpg" />
+      <VideoDisplay src="/images/avistaroom4.jpg" />
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />
       </div>
@@ -70,4 +70,4 @@ export default function Home() {
       </motion.main>
       </div>
        )
-       }
+       };

@@ -20,24 +20,14 @@ const HeroBanner = () => {
       title: 'THE BEST PLACE TO ALWAYS BE',
       description: 'Modern design with comfort in mind',
     },
-    {
-      id: 4,
-      imageUrl: '/images/avistaroom1.jpg',
-      title: 'UNWIND IN OUR SPACOIUS ROOMS',
-      description: 'Modern design with comfort in mind',
-    },
+    
     {
       id: 5,
       imageUrl: '/images/avistaroom2.jpg',
       title: 'EXPERIENCE GLITS AND MODERN ARTS',
       description: 'Modern design with comfort in mind',
     },
-    {
-      id: 6,
-      imageUrl: '/images/avistaroom3.jpg',
-      title: 'STAY SERVICED 247',
-      description: 'Modern design with comfort in mind',
-    },
+    
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
