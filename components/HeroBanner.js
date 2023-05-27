@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const HeroBanner = () => {
   const slides = [
@@ -23,7 +24,7 @@ const HeroBanner = () => {
     
     {
       id: 5,
-      imageUrl: '/images/avistaroom2.jpg',
+      imageUrl: '/images/avistaroom13.jpg',
       title: 'EXPERIENCE GLITS AND MODERN ARTS',
       description: 'Modern design with comfort in mind',
     },
@@ -44,7 +45,7 @@ const HeroBanner = () => {
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute  top-0 left-0 w-full h-full transition-all duration-500 ease-in-out ${
+          className={`absolute rounded-3xl  top-0 left-0 w-full h-full transition-all duration-500 ease-in-out ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
@@ -56,9 +57,11 @@ const HeroBanner = () => {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             <h1 className="text-4xl font-bold mb-4">{slide.title}</h1>
             <p className="text-lg mb-8">{slide.description}</p>
-            <button className="bg-avista font-bold text-avista2 py-3 px-8 rounded-full shadow-lg">
-              Book Now
+            <Link href="/navlinks/daypassbookings">
+            <button className="bg-avista font-extrabold text-avista2 py-3 px-8 rounded-full shadow-lg">
+             BOOK DAYPASS
             </button>
+            </Link>
           </div>
         </div>
       ))}

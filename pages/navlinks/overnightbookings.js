@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from 'react';
 import RoomSection from '../../components/RoomSection';
-import SlipForm from '../../components/SlipForm';
+import WhatsAppChat from '../../components/WhatsAppChat';
 import Link from 'next/link';
 
 
@@ -85,17 +85,29 @@ const BookingForm = () => {
 
     return (
       <div>
-       
+      
         <div className=" bg-avista2 mx-2 py-4 my-4 rounded-3xl text-center mt-20 ">
         <div className="mx-4 mb-4 font-bold text-base">
-        <h1 className="text-center mb-4 mt-8 font-extrabold text-lg bg-avista w-16 h-17 rounded-3xl">2</h1>
-      <h1 className="text-avista3 font-thin text-center">
-     Fill the form below to make reservation 
-        and click the <span className="font-bold">Book Now</span> button.
+        <h1 className="text-avista3 text-lg font-thin mt-10 text-center">
+        <span className="font-bold">Booking Successful....</span></h1>
+        <h1 className="text-center mb-4 mt-10 ml-8 font-extrabold text-lg bg-avista w-16 h-17 rounded-3xl">2</h1>
+      <h1 className="text-avista3 text-lg font-thin text-center">
+You may now proceed to confirm your booking by clicking the green button <span className="font-bold">Whatsapp Chat icon</span> below this page before you make payment to any of these Avista official bank account. And finally send us a slip or prove of payment via the whatsapp. 
+       <div className="mt-8">
+       <span className="font-bold">AVISTA MEGA GLOBAL VENTURES, STANBIC IBTC, 0037855764</span>
+       <br />
+       <span className="font-bold">AVISTA MEGA GLOBAL VENTURES, UBA, 1023925503</span>
+       <br />
+       <span className="font-bold">AVISTA MEGA GLOBAL VENTURES, TAJ BANK, 0002741713</span>
+       </div>
       </h1>
-      
+      <div className="pt-8">
+      <Link href="/" className="text-avista2 font-bold text-lg bg-avista3 rounded-3xl px-4 py-4 hover:underline" >
+     Go back home
+    </Link>
+    </div>
       </div>
-        <SlipForm />
+        
         </div>
       </div>
     );

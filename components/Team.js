@@ -6,7 +6,7 @@ import React from 'react'
 const Team = () => {
   return (
 
-      <div className="p-8 px-10 text-avista2 bg-gradient-to-b from-avista via-avista2 rounded-lg">
+      <div className="px-2 text-avista2 bg-gradient-to-b from-avista via-avista2 rounded-lg">
     <div className='mt-10 backdrop-blur-lg shadow-xl rounded-lg lg:w-30'>
     <p className="text-3xl font-bold tracking-tight text-center bg-avista2 rounded-lg text-avista3 py-5 px-2">
         TEAM
@@ -15,7 +15,7 @@ const Team = () => {
     <p className="mb-32 text-xl font-normal text-center text-avista3">
         Meat the best team in the world!
     </p>
-    <div className="flex flex-col items-center md:space-y-0 md:flex-row justify-between">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="relative p-4 lg:px-4 py-8">
             <div className="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                 <a href="#" className="relative block">

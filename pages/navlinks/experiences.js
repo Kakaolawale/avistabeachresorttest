@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const experiences = () => {
   const images = [
-    '/images/avistabeach1.jpg',
-    '/images/avistahero4.jpg',
-    '/images/avistahero7.jpg',
+    '/images/avistapics24.jpg',
+    '/images/avistapics26.jpg',
+    '/images/avistapics34.jpg',
     '/images/avistahero8.jpg',
     '/images/avistahero5.jpg',
   ];

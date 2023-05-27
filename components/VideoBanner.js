@@ -13,6 +13,7 @@ const VideoBanner = () => {
           autoPlay
           loop
           preload="auto"
+          muted
           />
          
         </div>

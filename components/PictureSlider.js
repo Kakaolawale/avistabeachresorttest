@@ -14,13 +14,13 @@ const PictureSlider = () => {
             className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-2 md:mt-16 lg:mt-20 xl:mt-28"
           >
             
-            <div className="block pt-4 lg:mr-8 mr-10 pr-20 text-space1-4 lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-avista3 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline text-space1-2">Welcome to</span>
-                <span className="block text-indigo-600 xl:inline">
-                  AVISTA BEACH RESORT!
-                </span>
-              </h1>
+            <div className="sm:ml-4 pt-8 lg:mr-8  sm:pr-4 text-space1-4 lg:text-left">
+              <h1 className="text-5xl tracking-tight sm:px-1 font-extrabold text-avista3 sm:text-5xl sm:text-center md:mr-20 md:pr-30md:text-4xl">
+              WELCOME TO AVISTA BEACH RESORT!!!
+             </h1>
+             <h1 className="text-5xl tracking-tight sm:px-1 mt-2 text-avista3 sm:text-3xl sm:text-center md:mr-20 md:pr-30md:text-4xl">
+                ...beyond the SEA.
+             </h1>
             </div>
           </motion.main>
           <motion.div

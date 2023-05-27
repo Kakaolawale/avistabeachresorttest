@@ -55,7 +55,15 @@ const CanteenSlider = () => {
     {
       id: 7,
       name: 'Sushi Platter',
-      image: '/images/avistafood7.jpg',
+      image: '/images/avistapics11.jpg',
+      description: 'Assorted sushi rolls and sashimi',
+      price: 18.99,
+      rating: 4.7,
+    },
+    {
+      id: 7,
+      name: 'Sushi Platter',
+      image: '/images/avistapics21.jpg',
       description: 'Assorted sushi rolls and sashimi',
       price: 18.99,
       rating: 4.7,
@@ -75,7 +83,7 @@ const CanteenSlider = () => {
             <h2 className="text-xl font-bold mb-2">{item.name}</h2>
             <p className="text-gray-600 mb-4">{item.description}</p>
             <div className="flex items-center justify-between">
-              <span className="text-gray-700 font-medium">${item.price}</span>
+              <span className="text-gray-700 font-medium">N{item.price}</span>
               <div className="flex items-center">
                 <span className="text-yellow-400 mr-1">&#9733;</span>
                 <span className="text-gray-600">{item.rating}</span>

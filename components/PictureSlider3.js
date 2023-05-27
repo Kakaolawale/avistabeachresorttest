@@ -10,8 +10,8 @@ const PictureSlider3 = () => {
             
             <Image 
             className="h-56 mb-4 mt-4 rounded-xl w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="/images/avistahero6.jpg"
-            alt="Next.js App"
+            src="/images/avistapics9.jpg"
+            alt="Avista Image1"
             width={1000}
             height={500}
             />
@@ -26,12 +26,12 @@ const PictureSlider3 = () => {
             className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-2 md:mt-16 lg:mt-20 xl:mt-28"
           >
             
-            <div className="block sm:ml-4 pt-8 lg:mr-8 mr-10 pr-20 text-space1-4 lg:text-left">
-              <h1 className="text-4xl tracking-tight sm:p-2 font-extrabold text-avista3 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline text-space1-2">Welcome to</span>
-                <span className="block text-indigo-600 xl:inline">
-                  AVISTA BEACH RESORT!
-                </span>
+            <div className="sm:ml-4 pt-8 lg:mr-8  sm:pr-4 text-space1-4 lg:text-left">
+              <h1 className="text-5xl tracking-tight sm:px-1 font-extrabold text-avista3 sm:text-5xl sm:text-center md:mr-20 md:pr-30md:text-4xl">
+             WELCOME TO A GREAT ADVENTURE,
+               
+                  AVISTA BEACH RESORT!!!
+               
               </h1>
             </div>
           </motion.main>

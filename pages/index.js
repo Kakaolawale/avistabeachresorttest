@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import SectionBanner from '../components/SectionBanner'
-import BeachDescription from '../components/BeachDescription'
+
 import PictureSlider from '../components/PictureSlider'
 import PictureSlider2 from '../components/PictureSlider2'
 import PictureSlider3 from '../components/PictureSlider3'
@@ -8,6 +8,7 @@ import PageSection1 from '../components/PageSection1'
 import CanteenSlider from '../components/CanteenSlider'
 import Team from '../components/Team'
 import HeroBanner from '../components/HeroBanner'
+import HeroBanner2 from '../components/HeroBanner2'
 
 
 import VideoDisplay from '../components/VideoDisplay'
@@ -52,13 +53,15 @@ export default function Home() {
       <PictureSlider3 />
       <br />
       <HeroBanner />
-      <VideoDisplay src="/images/avistaroom4.jpg" />
+     
+      <VideoDisplay src="/images/avistapics30.jpg" />
       <div className="flex items-center mt-4 justify-center h-48">
       <VerticalLine />
       </div>
       <div className='flex items-center justify-center'>
       <CircleVector />
       </div>
+      <HeroBanner2 />
       <SectionBanner3 />
       <PageSection1 />
       <Team />
