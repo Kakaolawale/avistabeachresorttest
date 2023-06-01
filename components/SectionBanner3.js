@@ -6,12 +6,15 @@ const SectionBanner3 = () => {
       
 <div className="relative  shadow-lg max-w-screen-2xl p-10 px-8 py-3 mx-auto sm:px-6 lg:px-3 lg:py-4 backdrop-blur-lg">
     <div className="lg:my-6 lg:mx- w-full overflow-hidden rounded-lg shadow-lg pricing-box lg:max-w-full lg:flex">
-        <div class="px-6 py-8 bg-avista2 lg:flex-shrink-1 lg:p-12">
+        <div className="px-6 py-8 bg-avista2 lg:flex-shrink-1 lg:p-12">
             <h3 className="text-2xl font-extrabold leading-8 text-avista3 sm:text-3xl sm:leading-9 dark:text-avista">
                 Avista Fast Payment Option
             </h3>
             <p className="mt-6 text-base leading-6 text-avista3 dark:text-avista">
-                Start paying online for Avista services and bookings with all the features and facilities of our beach front easy and fast, nothing more. We don&#x27;t charge on all payment made via bank transfers, however we are currently working on a seamless payment directly from our website, kindly stay updated and keep making payment through bank transfers.
+                Start paying online for Avista services and bookings with all the features and facilities of our beach 
+                front easy and fast, nothing more. We don&#x27;t charge on all payment made via bank transfers, however 
+                we are currently working on a seamless payment directly from our website, kindly stay updated and keep 
+                making payment through bank transfers.
             </p>
             <div className="mt-8">
                 <div className="flex items-center">
@@ -45,7 +48,7 @@ const SectionBanner3 = () => {
                         </p>
                     </li>
                     <li className="flex items-start lg:col-span-1">
-                        <div class="flex-shrink-0">
+                        <div className="flex-shrink-0">
                             <svg className="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
                                 <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
@@ -67,7 +70,7 @@ const SectionBanner3 = () => {
                         </p>
                     </li>
                     <li className="flex items-start lg:col-span-1">
-                        <div class="flex-shrink-0">
+                        <div className="flex-shrink-0">
                             <svg className="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
                                 <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
@@ -134,7 +137,7 @@ const SectionBanner3 = () => {
             </div>
         </div>
         <div className="px-6 py-8 text-center bg-avista3 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-            <p class="text-lg font-bold leading-6 text-gray-900 dark:text-white">
+            <p className="text-lg font-bold leading-6 text-gray-900 dark:text-white">
                 Pay
             </p>
             <div className="flex items-center justify-center mt-4 text-5xl font-extrabold leading-none text-gray-900 dark:text-white">

@@ -16,7 +16,7 @@ const WhatsAppChat = () => {
       <img
         src="/images/whatsapplogo2.png"
         alt="WhatsApp Chat"
-        className="w-14 h-14 rounded-full"
+        className="w-12 h-12 rounded-full"
       />
     </button>
   );

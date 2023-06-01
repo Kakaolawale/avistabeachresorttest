@@ -2,42 +2,16 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useRouter } from 'next/router';
+
 
 const daypassbookings = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slides, setSlides] = useState([]);
   const [daycationType, setDaycationType] = useState('');
+  const [bookingSubmitted, setBookingSubmitted] = useState(false); // New state variable
 
-  const activities = [
-    {
-      title: 'Swimming Pool For Adult',
-      price: 2000,
-    },
-    {
-      title: 'Swimming Pool For Kids',
-      price: 1000,
-    },
-    {
-      title: 'Gate Pass For Adult',
-      price: 3000,
-    },
-    {
-      title: 'Gate Pass For Kids',
-      price: 1000,
-    },
-    {
-      title: 'Beach Hut',
-      price: 25000,
-    },
-  ];
-  const [ageSelections, setAgeSelections] = useState({});
 
-  const handleAgeChange = (activityTitle, e) => {
-    setAgeSelections((prevSelections) => ({
-      ...prevSelections,
-      [activityTitle]: e.target.value,
-    }));
-  };
 
 
   const {
@@ -46,8 +20,33 @@ const daypassbookings = () => {
     formState: { errors }
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    try {
+      const endpoint = '/api/daypassbookings'; // Update the endpoint URL
+
+      const formData = {
+        ...data,
+        daycationType,
+      };
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setBookingSubmitted(true); // Set the submission status to true
+        reset(); // Reset the form state
+      } else {
+        const errorData = await response.json();
+        console.error(errorData);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
@@ -80,7 +79,7 @@ const daypassbookings = () => {
     // Change slide every 5 seconds
     const slideTimer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % loadedSlides.length);
-    }, 5000);
+    }, 3000);
 
     // Cleanup timer on unmount
     return () => clearInterval(slideTimer);
@@ -93,32 +92,9 @@ const daypassbookings = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             >
- <div className="bg-avista2 mt-20 mx-4 pb-8 sm:px-8 rounded-lg shadow-lg p-6 text-avista3">
- <h2 className="text-3xl font-extrabold text-gray-900 text-center tracking-tight mb-8">DAYPASS PRICES</h2>
-      {activities.map((activity, index) => (
-        <div
-          key={index}
-          className="bg-gray-100 rounded-lg p-4 mb-8 flex justify-between items-center"
-        >
-          <div>
-            <h3 className="text-lg font-semibold">{activity.title}</h3>
-            <p className="text-gray-600">Price per day: N{activity.price}</p>
-          </div>
-          <select
-            value={ageSelections[activity.title] || ''}
-            onChange={(e) => handleAgeChange(activity.title, e)}
-            className="bg-white border text-avista2 border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="">Select Age</option>
-            <option value="child">Child</option>
-            <option value="adult">Adult</option>
-            <option value="senior">Senior</option>
-          </select>
-        </div>
-      ))}
-    </div>
-      <div className="max-w-4xl mx-4 mt-8 bg-gradient-to-br from-avista via-avista2 rounded-xl pt-20 text-avista3 px-8 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-gray-900 text-center tracking-tight mb-8">DAYPASS BOOKING</h2>
+
+      <div className="max-w-4xl mx-4 mt-8 bg-gradient-to-br from-avista via-avista2 rounded-xl pt-20  px-8 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-extrabold text-avista3 text-center tracking-tight mb-8">DAYPASS BOOKING</h2>
         <div className="relative h-96 overflow-hidden  object-cover rounded-2xl">
           <div className="absolute rounded-xl inset-0">
             {slides.map((slide, index) => (
@@ -133,39 +109,58 @@ const daypassbookings = () => {
             ))}
           </div>
         </div>
+        {bookingSubmitted ? (
+            <div className="text-center mt-20 pb-20 text-avista3 text-xl font-bold">
+              <h1 className="text-avista3 text-lg font-thin mt-10 text-center">
+        <span className="font-bold">Booking Successful....</span></h1>
+        <h1 className="text-center mb-4 mt-10 ml-8 font-extrabold text-lg bg-avista w-16 h-17 rounded-3xl">2</h1>
+      <h1 className="text-avista3 text-lg font-thin text-center">
+You may now proceed to confirm your booking by copying any of the accounts shown below and then click the green button 
+<span className="font-bold">Whatsapp Chat icon</span> below this page before you make payment to any of these Avista 
+official bank account. And finally send us a slip or prove of payment via the whatsapp. 
+       <div className="mt-8">
+       <span className="font-bold">AVISTA MEGA GLOBAL VENTURES, STANBIC IBTC, 0037855764</span>
+       <br />
+       <span className="font-bold">AVISTA MEGA GLOBAL VENTURES, UBA, 1023925503</span>
+       <br />
+       <span className="font-bold">AVISTA MEGA GLOBAL VENTURES, TAJ BANK, 0002741713</span>
+       </div>
+      </h1>
+            </div>
+          ) : (
         <form className="mt-8" onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
+            <label htmlFor="name" className="block text-avista3 font-bold mb-2">Name</label>
             <input {...register("name", { required: true })} type="text" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="name" />
-            {errors.name && <span className="text-red-500 text-xs italic">This field is required</span>}
+            {errors.name && <span className="text-avista2 text-lg italic">This field is required</span>}
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
+            <label htmlFor="email" className="block text-avista3 font-bold mb-2">Email</label>
             <input {...register("email", { required: true, pattern: /^\S+@\S+$/i })} type="email" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="email" />
             {errors.email && errors.email.type === "required" && <span className="text-red-500 text-xs italic">This field is required</span>}
             {errors.email && errors.email.type === "pattern" &&
-            <span className="text-red-500 text-xs italic">Please enter a valid email address</span>}
+            <span className="text-avista3 text-xs italic">Please enter a valid email address</span>}
             </div>
             <div className="mb-4">
-              <label htmlFor="date" className="block text-gray-700 font-bold mb-2">Check-In Date</label>
+              <label htmlFor="date" className="block text-avista3  font-bold mb-2">Check-In Date</label>
               <input {...register("date", { required: true })} type="date" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="date" />
-              {errors.date && <span className="text-red-500 text-xs italic">This field is required</span>}
+              {errors.date && <span className="text-avista3 text-xs italic">This field is required</span>}
             </div>
             <div className="mb-4">
-              <label htmlFor="time" className="block text-gray-700 font-bold mb-2">Check-In Time</label>
+              <label htmlFor="time" className="block text-avista3 font-bold mb-2">Check-In Time</label>
               <input {...register("time", { required: true })} type="time" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="time" />
-              {errors.date && <span className="text-red-500 text-xs italic">This field is required</span>}
+              {errors.date && <span className="text-avista3 text-xs italic">This field is required</span>}
             </div>
 
             <div className="mb-4">
-              <label htmlFor="guests" className="block font-bold mb-2">Number of Guests</label>
+              <label htmlFor="guests" className="block text-avista3 font-bold mb-2">Number of Guests</label>
               <input {...register("guests", { required: true, min: 1 })} type="number" className="form-input w-full text-avista2 font-bold px-4 py-2 border rounded-md" id="guests" />
-              {errors.guests && errors.guests.type === "required" && <span className="text-red-500 text-xs italic">This field is required</span>}
-              {errors.guests && errors.guests.type === "min" && <span className="text-red-500 text-xs italic">Please enter a number greater than zero</span>}
+              {errors.guests && errors.guests.type === "required" && <span className="text-text-avista2 text-xs italic">This field is required</span>}
+              {errors.guests && errors.guests.type === "min" && <span className="text-text-avista2 text-xs italic">Please enter a number greater than zero</span>}
             </div>
             <div className="mb-4">
-              <label htmlFor="hut" className="block font-bold mb-2">Type Of Daycation</label>
-              <select value={daycationType} className='w-full text-avista2 font-bold px-4 py-2 border rounded-md'>
+              <label htmlFor="hut" className="block text-avista3 font-bold mb-2">Type Of Daycation</label>
+              <select value={daycationType} onChange={(e) => setDaycationType(e.target.value)} className="w-full text-avista2 font-bold px-4 py-2 border rounded-md">
           <option value="">Select Daycation Type</option>
           <option value="swimming pool for adult">1 Swimming Pool For Adult</option>
           <option value="swimming pool for kids">2 Swimming Pool For Kids</option>
@@ -184,6 +179,7 @@ const daypassbookings = () => {
               </button>
             </div>
           </form>
+          )}
       </div>
         </motion.main>
       </div>

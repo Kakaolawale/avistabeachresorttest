@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/api/paymentslip",
+        "methods": ["POST"],
+        "body": "100mb"
+      }
+    ]
+  }
+  

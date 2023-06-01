@@ -27,12 +27,10 @@ const PictureSlider3 = () => {
           >
             
             <div className="sm:ml-4 pt-8 lg:mr-8  sm:pr-4 text-space1-4 lg:text-left">
-              <h1 className="text-5xl tracking-tight sm:px-1 font-extrabold text-avista3 sm:text-5xl sm:text-center md:mr-20 md:pr-30md:text-4xl">
+              <h1 className="text-5xl tracking-tight sm:px-1 font-extrabold text-avista3 sm:text-4xl sm:text-center md:mr-20 md:pr-30md:text-4xl">
              WELCOME TO A GREAT ADVENTURE,
-               
-                  AVISTA BEACH RESORT!!!
-               
-              </h1>
+             AVISTA BEACH RESORT!!!
+            </h1>
             </div>
           </motion.main>
           <motion.div

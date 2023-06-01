@@ -16,7 +16,7 @@ const VideoDisplay = ({ src }) => {
             />
       <div className="absolute inset-0 bg-black opacity-25"></div>
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="max-w-lg mx-auto px-4 mt-80">
+        <div className="max-w-lg mx-auto px-4 mt-40">
           <h1 className="text-4xl font-bold text-avista3 leading-tight mb-6">
             Best Moments
           </h1>

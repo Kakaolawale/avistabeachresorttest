@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 import multer from 'multer';
+require('dotenv').config(); // Load environment variables from .env file
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
@@ -17,16 +18,16 @@ export default async function handler(req, res) {
     // Create a transporter with Gmail SMTP details
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
-        auth: {
-          user: 'space1empire@gmail.com',
-          pass: 'fjvjfoiurjtgnems',
+      auth: {
+        user: 'avistabeachng@gmail.com',
+        pass: process.env.GMAIL_APP_PASSWORD, // Use environment variable for the password
       },
     });
 
     // Prepare the email message
     const message = {
-      from: 'space1empire@gmail.com',
-      to: 'dukeofindustry@gmail.com', // Set the recipient email as your own email address
+      from: 'avistabeachng@gmail.com',
+      to: 'space1empire@gmail.com, avistabooking@gmail.com', // Set the recipient email as your own email address
       subject: 'New Booking Form Submission',
       text: `
         Check-in Date: ${checkInDate}

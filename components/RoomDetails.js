@@ -6,17 +6,17 @@ import Link from "next/link"
 const RoomDetails = () => {
   const rooms = [
     {
-      name: 'Ocean View Suite',
+      name: 'Beautiful Booking Reception',
       description: 'Spacious suite with a stunning ocean view.',
       image: '/images/avistapics7.jpg',
     },
     {
-      name: 'Beachfront Bungalow',
+      name: 'Executive Villa',
       description: 'Cozy bungalow located right on the beach.',
       image: '/images/avistapics3.jpg',
     },
     {
-      name: 'Palm Villa',
+      name: 'Beachfront Bungalow',
       description: 'Luxurious villa surrounded by lush palm trees.',
       image: '/images/avistapics5.jpg',
     },
@@ -26,9 +26,14 @@ const RoomDetails = () => {
       image: '/images/avistapics4.jpg',
     },
     {
-      name: 'Ocean View Suite',
+      name: 'Ocean Villa Presidential Suite',
       description: 'Spacious suite with a stunning ocean view.',
       image: '/images/avistapics9.jpg',
+    },
+    {
+      name: 'Ocean View Huts',
+      description: 'Spacious suite with a stunning ocean view.',
+      image: '/images/avistanow6.jpg',
     },
   ];
 
@@ -83,8 +88,8 @@ const RoomDetails = () => {
       </div>
 
       <div className="mt-4 mx-4">
-        <h3 className="text-lg font-medium">{rooms[currentSlide].name}</h3>
-        <p className="mt-1 text-gray-500 pb-4">{rooms[currentSlide].description}</p>
+        <h3 className="text-lg font-lg">{rooms[currentSlide].name}</h3>
+        <p className="mt-1 text-avista2 pb-4">{rooms[currentSlide].description}</p>
         <Link href="/navlinks/overnightbookings">
         <button className='bg-avista2 text-avista3 m-2 p-4 rounded-3xl'>
           BOOK ROOMS
