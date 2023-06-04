@@ -1,17 +1,25 @@
+
+
 import React from 'react';
+import { isMobile, isAndroid } from 'react-device-detect';
 
 const WhatsAppChat = () => {
   const phoneNumber = '09126035876'; // Replace with your WhatsApp phone number
-  
+
   const handleWhatsAppChat = () => {
-    const link = `https://wa.me/${phoneNumber}`;
+    let link = '';
+    if (isMobile && isAndroid) {
+      link = `https://wa.me/${phoneNumber}`;
+    } else {
+      link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+    }
     window.open(link, '_blank');
   };
 
   return (
     <button
       onClick={handleWhatsAppChat}
-      className="fixed bottom-4  p-4 bg-blue-500 z-40 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none"
+      className="fixed bottom-4 p-4 bg-blue-500 z-40 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none"
     >
       <img
         src="/images/whatsapplogo2.png"
