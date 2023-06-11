@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { useRouter } from 'next/router';
 
 
-const daypassbookings = () => {
+const beachhutsbookings = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slides, setSlides] = useState([]);
-  const [daycationType, setDaycationType] = useState('');
+  const [numberOfHuts, setNumberOfHuts] = useState('');
   const [bookingSubmitted, setBookingSubmitted] = useState(false); // New state variable
 
 
@@ -22,11 +22,11 @@ const daypassbookings = () => {
 
   const onSubmit = async (data) => {
     try {
-      const endpoint = '/api/daypassbookings'; // Update the endpoint URL
+      const endpoint = '/api/hutsbookings'; // Update the endpoint URL
 
       const formData = {
         ...data,
-        daycationType,
+        numberOfHuts,
       };
 
       const response = await fetch(endpoint, {
@@ -52,15 +52,13 @@ const daypassbookings = () => {
   useEffect(() => {
     // Load images from the images folder
     const imagePaths = [
-      "/images/avistafood12.jpg", 
-      "/images/avistafood15.jpg", 
-      "/images/avistadaypass2.jpg", 
-      "/images/avistadaypass3.jpg", 
-      "/images/avistahero5.jpg", 
-      "/images/avistahero8.jpg",
-      "/images/avistahero9.jpg",
-      "/images/avistahero6.jpg", 
-      "/images/avistahero2.jpg", 
+      '/images/avistapics16.jpg',
+      '/images/avistapics19.jpg',
+      '/images/avistabeach1.jpg',
+      '/images/avistadaypass1.jpg',
+      '/images/avistaroom24.jpg',
+      '/images/avistanow6.jpg',
+      
     ];
 
 
@@ -98,7 +96,17 @@ const daypassbookings = () => {
             >
 
       <div className="max-w-4xl mx-4 mt-8 bg-gradient-to-br from-avista via-avista2 rounded-xl pt-20  px-8 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-avista3 text-center tracking-tight mb-8">DAYPASS BOOKING</h2>
+        <h2 className="text-3xl font-extrabold text-avista3 text-center tracking-tight mb-8">BEACH HUTS BOOKING</h2>
+        <h2 className="text-center font-bold text-lg text-avista3 pb-2">
+        N25,000 From 7AM-7PM Per Hut
+        </h2>
+        <hr className="text-avista3" />
+        <h2 className="text-center pb-4 text-avista3"> 
+        N25,000 From 7PM-7AM Per Hut
+       </h2>
+       <h2 className="text-center pb-4 text-avista3"> 
+       Fill the booking form below to make reservation.
+       </h2>
         <div className="relative h-96 overflow-hidden  object-cover rounded-2xl">
           <div className="absolute rounded-xl inset-0">
             {slides.map((slide, index) => (
@@ -145,22 +153,6 @@ official bank account. And finally send us a slip or prove of payment via the wh
             {errors.email && errors.email.type === "pattern" &&
             <span className="text-avista3 text-xs italic">Please enter a valid email address</span>}
             </div>
-
-            <div className="mb-4">
-                <label htmlFor="phone" className="block text-avista3 font-bold mb-2">
-                  Phone Number
-                </label>
-                <input
-                  {...register("phone", { required: true })}
-                  type="tel"
-                  className="form-input w-full px-4 py-2 border text-avista2 rounded-md"
-                  id="phone"
-                />
-                {errors.phone && (
-                  <span className="text-avista2 text-lg italic">This field is required</span>
-                )}
-              </div>
-
             <div className="mb-4">
               <label htmlFor="date" className="block text-avista3  font-bold mb-2">Check-In Date</label>
               <input {...register("date", { required: true })} type="date" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="date" />
@@ -172,6 +164,34 @@ official bank account. And finally send us a slip or prove of payment via the wh
               {errors.date && <span className="text-avista3 text-xs italic">This field is required</span>}
             </div>
 
+       
+
+<div className="mb-4">
+  <label htmlFor="checkoutDate" className="block text-avista3 font-bold mb-2">Check-Out Date</label>
+  <input {...register("checkoutDate", { required: true })} type="date" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="checkoutDate" />
+  {errors.checkoutDate && <span className="text-avista3 text-xs italic">This field is required</span>}
+</div>
+<div className="mb-4">
+  <label htmlFor="checkoutTime" className="block text-avista3 font-bold mb-2">Check-Out Time</label>
+  <input {...register("checkoutTime", { required: true })} type="time" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="checkoutTime" />
+  {errors.checkoutTime && <span className="text-avista3 text-xs italic">This field is required</span>}
+</div>
+
+
+
+<div className="mb-4">
+  <label htmlFor="phone" className="block text-avista3 font-bold mb-2">Phone Number</label>
+  <input {...register("phone")} type="tel" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="phone" />
+  {errors.phone && errors.phone.type === "required" && <span className="text-avista3 text-xs italic">This field is required</span>}
+  {errors.phone && errors.phone.type === "pattern" && <span className="text-avista3 text-xs italic">Please enter a valid phone number</span>}
+</div>
+
+
+
+
+
+
+
             <div className="mb-4">
               <label htmlFor="guests" className="block text-avista3 font-bold mb-2">Number of Guests</label>
               <input {...register("guests", { required: true, min: 1 })} type="number" className="form-input w-full text-avista2 font-bold px-4 py-2 border rounded-md" id="guests" />
@@ -179,14 +199,15 @@ official bank account. And finally send us a slip or prove of payment via the wh
               {errors.guests && errors.guests.type === "min" && <span className="text-text-avista2 text-xs italic">Please enter a number greater than zero</span>}
             </div>
             <div className="mb-4">
-              <label htmlFor="hut" className="block text-avista3 font-bold mb-2">Type Of Daycation</label>
-              <select value={daycationType} onChange={(e) => setDaycationType(e.target.value)} className="w-full text-avista2 font-bold px-4 py-2 border rounded-md">
-          <option value="">Select Daycation Type</option>
-          <option value="swimming pool for adult">1 Swimming Pool For Adult</option>
-          <option value="swimming pool for kids">2 Swimming Pool For Kids</option>
-          <option value="gate pass for adult">3 Gate Pass For Adult</option>
-          <option value="gate pass for children">4 Gate Pass For Children</option>
-          
+              <label htmlFor="hut" className="block text-avista3 font-bold mb-2">Number Of Huts</label>
+              <select value={numberOfHuts} onChange={(e) => setNumberOfHuts(e.target.value)} className="w-full text-avista2 font-bold px-4 py-2 border rounded-md">
+          <option value="">Select Number Of Huts</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
           </select>
             </div>
             <div className="flex items-center pb-4  justify-center">
@@ -202,5 +223,5 @@ official bank account. And finally send us a slip or prove of payment via the wh
     );
   };
   
-  export default daypassbookings;
+  export default beachhutsbookings;
   

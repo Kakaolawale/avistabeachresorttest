@@ -26,7 +26,10 @@ function Navbar() {
 
   return (
     <nav className="transition-opacity duration-500 w-full top-0 h-25 shadow-lg fixed lg:mb-8 backdrop-blur-sm bg-avista opacity-100 z-50 hover:bg-avista2 ...">
-      <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+      <motion.main 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 1 }}>
         {/* Rest of the code */}
         <div className="justify-between px-4 mx-auto lg:max-w-8xl md:items-center md:flex sm:px-8">
           <div className={`mt-top-adjusted ${navbar ? 'adjust-down' : ''}`}>
@@ -84,7 +87,7 @@ function Navbar() {
                   </li>
                   <li className={`text-avista3 hover:text-avista ${activeNavItem === 'roomdetails' ? 'active' : ''}`}>
                     <Link href="/navlinks/roomdetails" onClick={() => handleClick('roomdetails')}>
-                      Room Details
+                      Beach Features
                     </Link>
                   </li>
                   <li className={`text-avista3 hover:text-avista ${activeNavItem === 'daypassbookings' ? 'active' : ''}`}>
@@ -98,9 +101,9 @@ function Navbar() {
                     </Link>
                   </li>
                   <div className="bg-avista3 pr-4 hover:bg-space1-4/50 rounded-xl h-7 w-18 lg:h-8 lg:w-35 sm:h-8 sm:w-35  shadow-md">
-                    <Link href="/navlinks/checkout" className="text-space1-4 pl-4 mr-4 text-lg mx-8 lg:my-20" onClick={() =>
+                    <Link href="/navlinks/hutsbookings" className="text-space1-4 pl-4 mr-4 text-lg mx-8 lg:my-20" onClick={() =>
                       handleClick('checkout')}>
-                      CHECK<span className="font-thin">OUT</span>
+                      HUTS<span className="font-thin">Booking</span>
                     </Link>
                   </div>
                 </ul>

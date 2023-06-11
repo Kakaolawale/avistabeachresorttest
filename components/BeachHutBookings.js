@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useRouter } from 'next/router';
 
 
-const daypassbookings = () => {
+const BeachHutBookings = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slides, setSlides] = useState([]);
   const [daycationType, setDaycationType] = useState('');
@@ -145,22 +145,6 @@ official bank account. And finally send us a slip or prove of payment via the wh
             {errors.email && errors.email.type === "pattern" &&
             <span className="text-avista3 text-xs italic">Please enter a valid email address</span>}
             </div>
-
-            <div className="mb-4">
-                <label htmlFor="phone" className="block text-avista3 font-bold mb-2">
-                  Phone Number
-                </label>
-                <input
-                  {...register("phone", { required: true })}
-                  type="tel"
-                  className="form-input w-full px-4 py-2 border text-avista2 rounded-md"
-                  id="phone"
-                />
-                {errors.phone && (
-                  <span className="text-avista2 text-lg italic">This field is required</span>
-                )}
-              </div>
-
             <div className="mb-4">
               <label htmlFor="date" className="block text-avista3  font-bold mb-2">Check-In Date</label>
               <input {...register("date", { required: true })} type="date" className="form-input w-full px-4 py-2 border text-avista2 rounded-md" id="date" />
@@ -186,7 +170,11 @@ official bank account. And finally send us a slip or prove of payment via the wh
           <option value="swimming pool for kids">2 Swimming Pool For Kids</option>
           <option value="gate pass for adult">3 Gate Pass For Adult</option>
           <option value="gate pass for children">4 Gate Pass For Children</option>
-          
+          <option value="beach hut">5 Beach Hut</option>
+          <option value="beach hut">1,2,3,4&5</option>
+          <option value="beach hut">1,2,3&4</option>
+          <option value="beach hut">1,2&3</option>
+          <option value="beach hut">1&2</option>
           </select>
             </div>
             <div className="flex items-center pb-4  justify-center">
@@ -202,5 +190,5 @@ official bank account. And finally send us a slip or prove of payment via the wh
     );
   };
   
-  export default daypassbookings;
+  export default BeachHutBookings;
   

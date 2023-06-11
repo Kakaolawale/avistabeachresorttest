@@ -2,36 +2,36 @@ import { useState, useEffect } from 'react';
 import Link from "next/link"
 
 
-const RoomDetails = () => {
+const ImageSlide = () => {
   const rooms = [
     {
       name: 'Beautiful Booking Reception',
       description: 'Spacious suite with a stunning ocean view.',
-      image: '/images/avistapics7.jpg',
+      image: '/images/avistapics16.jpg',
     },
     {
       name: 'Executive Villa',
       description: 'Cozy bungalow located right on the beach.',
-      image: '/images/avistapics3.jpg',
+      image: '/images/avistapics19.jpg',
     },
     {
       name: 'Beachfront Bungalow',
       description: 'Luxurious villa surrounded by lush palm trees.',
-      image: '/images/avistapics5.jpg',
+      image: '/images/avistabeach1.jpg',
     },
     {
       name: 'Ocean View Suite',
-      description: 'Spacious suite with a stunning ocean view.',
-      image: '/images/avistapics4.jpg',
+      description: 'Spacious suite with a stunning ocean view.1',
+      image: '/images/avistadaypass1.jpg',
     },
     {
       name: 'Ocean Villa Presidential Suite',
-      description: 'Spacious suite with a stunning ocean view.',
-      image: '/images/avistapics9.jpg',
+      description: 'Spacious suite with a stunning ocean view.2',
+      image: '/images/avistaroom24.jpg',
     },
     {
       name: 'Ocean View Huts',
-      description: 'Spacious suite with a stunning ocean view.',
+      description: 'Spacious suite with a stunning ocean view.3',
       image: '/images/avistanow6.jpg',
     },
   ];
@@ -53,9 +53,9 @@ const RoomDetails = () => {
   };
 
   return (
-    <div className="relative mt-4 mx-2 mb-4 rounded-3xl font-bold text-avista3">
+    <div className="relative mt-20 pt-8 mx-2 mb-4 rounded-3xl font-bold text-avista3">
       <div className='text-center font-extrabold tracking-tighter text-4xl'>
-        <h1>AVISTA BEACH FEATURES PREVIEW</h1>
+        <h1>AVISTA BEACH HUTS</h1>
       </div>
 
       <div className="mt-8 mx-4">
@@ -69,9 +69,9 @@ const RoomDetails = () => {
       <div className="mt-4 mx-4">
         <h3 className="text-lg font-lg">{rooms[currentSlide].name}</h3>
         <p className="mt-1 text-avista2 pb-4">{rooms[currentSlide].description}</p>
-        <Link href="/navlinks/overnightbookings">
+        <Link href="/navlinks/hutsbookings">
           <button className='bg-avista2 text-avista3 m-2 p-4 rounded-3xl'>
-            BOOK ROOMS
+            BOOK HUTS
           </button>
         </Link>
       </div>
@@ -79,4 +79,4 @@ const RoomDetails = () => {
   );
 };
 
-export default RoomDetails;
+export default ImageSlide;

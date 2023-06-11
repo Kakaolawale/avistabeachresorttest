@@ -6,38 +6,32 @@ const rooms = [
   {
     name: 'Deluxe Room',
     description: 'Our 6 units of spacious and elegant deluxe rooms offer a comfortable and luxurious stay featuring a separate living area with 4 units of rooms with stunning sea view and 2 units without sea view.',
-    imageSrc: '/images/avistanow1.jpg',
+    imageSrc: '/images/avistabeach60k2.jpg',
     price: 'N60,000 Per Night',
     rating: 4.5,
   },
   {
     name: 'Executive Suite',
     description: 'Experience the ultimate in luxury with our Executive Suites, featuring a separate living area without sea view.',
-    imageSrc: '/images/avistanow2.jpg',
+    imageSrc: '/images/avistabeach80k4.jpg',
     price: 'N80,000 Per Night',
     rating: 5,
   },
   {
     name: 'Premium Room',
     description: 'Our Premium Rooms offer 3 units of extra level of comfort and sophistication, with upgraded amenities, stunning decor wherein 2 units comes with sea view and balcony and 1 unit without sea view.',
-    imageSrc: '/images/avistanow3.jpg',
+    imageSrc: '/images/avistabeach100k1.jpg',
     price: 'N100,000 Per Night',
     rating: 4.7,
   },
   {
     name: 'Presidential Suite',
     description: 'Relax in style with our 1 unit of Presidential Suite, featuring a comfortable living area and modern amenities, sea view, private cabana and private pool.',
-    imageSrc: '/images/avistanow4.jpg',
+    imageSrc: '/images/avistabeach150k1.jpg',
     price: 'N150,000 Per Night',
     rating: 4.2,
   },
-  {
-    name: 'Avista Beach Huts',
-    description: 'Relax in style with any of our 8 unit of beach huts, featuring a comfortable private toilet, bathroom with sea view.',
-    imageSrc: '/images/avistanow6.jpg',
-    price: 'N25,000 From 7AM-7PM & N25,000 From 7PM-7AM',
-    rating: 4.2,
-  },
+  
   
 ];
 
