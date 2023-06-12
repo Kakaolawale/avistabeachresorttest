@@ -100,10 +100,10 @@ function Navbar() {
                       Overnight Booking
                     </Link>
                   </li>
-                  <div className="bg-avista3 pr-4 hover:bg-space1-4/50 rounded-xl h-7 w-18 lg:h-8 lg:w-35 sm:h-8 sm:w-35  shadow-md">
-                    <Link href="/navlinks/hutsbookings" className="text-space1-4 pl-4 mr-4 text-lg mx-8 lg:my-20" onClick={() =>
+                  <div className="pr-4 hover:bg-avista/50 rounded-xl h-7 w-18 lg:h-8 lg:w-35 sm:h-8 sm:w-35  shadow-md">
+                    <Link href="/navlinks/hutsbookings" className="text-avista3 pr-20 mr-4 text-lg mx-8 lg:my-20" onClick={() =>
                       handleClick('checkout')}>
-                      HUTS<span className="font-thin">Booking</span>
+                      HUTS<span className="font-bold">Booking</span>
                     </Link>
                   </div>
                 </ul>
