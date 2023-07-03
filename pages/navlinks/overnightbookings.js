@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from 'react';
 import RoomSection from '../../components/RoomSection';
+import RoomSectionSlides from '../../components/RoomSectionSlides';
+import RoomSectionSlides2 from '../../components/RoomSectionSlides2';
+import RoomSectionSlides3 from '../../components/RoomSectionSlides3';
+import RoomSectionSlides4 from '../../components/RoomSectionSlides4';
 import WhatsAppChat from '../../components/WhatsAppChat';
 import Link from 'next/link';
 
@@ -118,7 +122,11 @@ official bank account. And finally send us a slip or prove of payment via the wh
 
   return (
     <div className='mt-20 mx-4 bg-gradient-to-bl from-avista via-avista2 rounded-3xl sm:mb-30 pt-10'>
-      <RoomSection />
+      <RoomSectionSlides />
+      <RoomSectionSlides2 />
+      <RoomSectionSlides3 />
+      <RoomSectionSlides4 />
+     
       <div className="mx-4 mb-4 font-bold text-base">
         <h1 className="text-center mb-4 mt-2 font-extrabold text-lg bg-avista3 w-16 h-17 rounded-3xl">1</h1>
       <h1 className="text-avista3 font-thin text-center">
@@ -216,11 +224,13 @@ official bank account. And finally send us a slip or prove of payment via the wh
         className='text-avista2 px-4 font-bold rounded-lg'
       >
         <option value=''>Select Room Type</option>
-        <option value='delux N60,000'>Delux-N60,000</option>
-        <option value='executive N80,000'>Executive-N80,000</option>
-        <option value='premium 100,000'>Premium-100,000</option>
-        <option value='presidential 150,000'>Presidential-150,000</option>
-        <option value='beachhut N25,000'>Beachhut-N25,000</option>
+        <option value='Volute Shell N60,000'>Volute Shell-N60,000</option>
+        <option value='Auger Shell N60,000'>Auger Shell-N60,000</option>
+        <option value='Tulip Shell N80,000'>Tulip Shell-N80,000</option>
+        <option value='Olivia Shell N80,000'>Olivia Shell-N80,000</option>
+        <option value='Abalone Shell 100,000'>Abalone Shell-100,000</option>
+        <option value='Drupe Shell 100,000'>Drupe Shell-100,000</option>
+        <option value='presidential 150,000'>Cup Shell-150,000</option>
       </select>
     </label>
     <div className='bg-avista rounded-xl my-4 ml-10 md:mx-20'>

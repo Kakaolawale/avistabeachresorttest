@@ -12,7 +12,7 @@ const ContactSection = () => {
         </div>
         <div className="flex items-center ml-2">
           <FaPhoneAlt className="text-avista2 text-sm mr-2" />
-          <p className="text-gray-800">+234803094217</p>
+          <p className="text-gray-800">09126035876</p>
         </div>
         </div>
       </div>

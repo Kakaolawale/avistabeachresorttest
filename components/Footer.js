@@ -20,7 +20,7 @@ const Footer = () => {
       <span className='font-bold'>2023©</span> Avista Beach Resort™
       All Rights Reserved.
       <br />
-    <span className='font-bold text-sm'><a href="https://space1tech.business.site" className="hover:underline text-xs">Site Developed By Space1 Technology.</a></span></span>
+    <span className='font-bold text-sm'><a href="https://space1unicorn.com" className="hover:underline text-xs">Site Developed By Space1 Technology Unicorn.</a></span></span>
     <div>
       <SocialMediaSection className="self-center text-sm font-semibold whitespace-nowrap text-avista2" />
     </div>
