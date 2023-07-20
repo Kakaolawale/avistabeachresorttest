@@ -25,7 +25,7 @@ function Navbar() {
   }, [activeNavItem, navbar]);
 
   return (
-    <nav className="transition-opacity duration-500 w-full top-0 h-25 shadow-lg fixed lg:mb-8 backdrop-blur-sm bg-avista opacity-100 z-50 hover:bg-avista2 ...">
+    <nav className="transition-opacity duration-500 w-full top-0 h-25 shadow-lg fixed lg:mb-8 backdrop-blur bg-avista opacity-100 z-50 hover:bg-avista2">
       <motion.main 
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
@@ -75,6 +75,17 @@ function Navbar() {
                       Experiences
                     </Link>
                   </li>
+                  
+                  <li className={`text-avista3 hover:text-avista ${activeNavItem === 'experiences' ? 'active' : ''}`}>
+                    <Link href="/navlinks/kitchen" onClick={() => handleClick('experiences')}>
+                     Kitchen
+                    </Link>
+                  </li>
+                  <li className={`text-avista3 hover:text-avista ${activeNavItem === 'experiences' ? 'active' : ''}`}>
+                    <Link href="/navlinks/artgallery" onClick={() => handleClick('experiences')}>
+                    ArtGalleria
+                    </Link>
+                  </li>
                   <li className={`text-avista3 hover:text-avista ${activeNavItem === 'eventsspot' ? 'active' : ''}`}>
                     <Link href="/navlinks/eventsspot" onClick={() => handleClick('eventsspot')}>
                       <span className="font-black text-space1-2">Events</span>SPOT
@@ -85,11 +96,7 @@ function Navbar() {
                       Gallery
                     </Link>
                   </li>
-                  <li className={`text-avista3 hover:text-avista ${activeNavItem === 'roomdetails' ? 'active' : ''}`}>
-                    <Link href="/navlinks/roomdetails" onClick={() => handleClick('roomdetails')}>
-                      Beach Features
-                    </Link>
-                  </li>
+                  
                   <li className={`text-avista3 hover:text-avista ${activeNavItem === 'daypassbookings' ? 'active' : ''}`}>
                     <Link href="/navlinks/daypassbookings" onClick={() => handleClick('daypassbookings')}>
                       Daypass Booking
@@ -103,7 +110,7 @@ function Navbar() {
                   <div className="pr-4 hover:bg-avista/50 rounded-xl h-7 w-18 lg:h-8 lg:w-35 sm:h-8 sm:w-35  shadow-md">
                     <Link href="/navlinks/hutsbookings" className="text-avista3 pr-20 mr-4 text-lg mx-8 lg:my-20" onClick={() =>
                       handleClick('checkout')}>
-                      HUTS<span className="font-bold">Booking</span>
+                      BEACHHUTS<span className="font-bold">Booking</span>
                     </Link>
                   </div>
                 </ul>

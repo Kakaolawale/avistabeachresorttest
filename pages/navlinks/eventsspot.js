@@ -22,13 +22,6 @@ const HeroBanner = () => {
       description: 'Modern design with comfort in mind',
     },
     
-    {
-      id: 5,
-      imageUrl: '/images/avistapics29.jpg',
-      title: 'EXPERIENCE GLITS AND MODERN ARTS',
-      description: 'Modern design with comfort in mind',
-    },
-    
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -53,10 +53,8 @@ const beachhutsbookings = () => {
     // Load images from the images folder
     const imagePaths = [
       '/images/avistapics16.jpg',
-      '/images/avistapics19.jpg',
       '/images/avistabeach1.jpg',
       '/images/avistadaypass1.jpg',
-      '/images/avistaroom24.jpg',
       '/images/avistanow6.jpg',
       
     ];

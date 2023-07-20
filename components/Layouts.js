@@ -11,10 +11,8 @@ const Layouts = ({children}) => {
     <div  className='bg-avista'>
       <Navbar />
       <WhatsAppChat />
-   
       {children}
       <LastSection />
-      
       <Footer />
     </div>
   )

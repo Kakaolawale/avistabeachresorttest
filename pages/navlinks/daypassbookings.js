@@ -102,7 +102,7 @@ const daypassbookings = () => {
         
         <h1 className="text-center mb-2 text-avista3"> Please kindly fill the form below to make bookings.</h1>
         
-        <h2 className="text-3xl font-extrabold text-avista2 text-center bg-avista3 rounded-3xl w-18 tracking-tight mb-8">Gate Pass Prices With Corkage</h2>
+        <h2 className="text-xl font-extrabold text-avista3 text-center bg-avista2/50 backdrop-blur-3xl rounded-3xl w-15 tracking-tight mb-8">Gate Pass Prices With Corkage</h2>
 
         <h2 className="text-center font-bold text-lg text-avista3 pb-2">
         <span>N5000 Per Adult</span><br />
@@ -110,7 +110,7 @@ const daypassbookings = () => {
         <span>N2000 Per Kid</span>
         </h2>
         
-        <h2 className="text-3xl font-extrabold text-avista2 text-center bg-avista3 rounded-3xl w-18 tracking-tight mb-8">Gate Pass Prices Without Corkage</h2>
+        <h2 className="text-xl font-extrabold text-avista3 text-center bg-avista2/50 backdrop-blur-3xl rounded-3xl w-18 tracking-tight mb-8">Gate Pass Prices Without Corkage</h2>
 
         <h2 className="text-center font-bold text-lg text-avista3 pb-2">
         <span>N3000 Per Adult</span><br />
@@ -118,7 +118,7 @@ const daypassbookings = () => {
         <span>N1000 Per Kid</span>
         </h2>
         <hr className="text-avista3 mb-4 pb-8" />
-        <h2 className="text-3xl font-extrabold text-avista2 text-center bg-avista3 rounded-3xl w-18 tracking-tight mb-8">Swimming Prices</h2>
+        <h2 className="text-xl font-extrabold text-avista3 text-center bg-avista2/50 backdrop-blur-3xl rounded-3xl w-18 tracking-tight mb-8">Swimming Prices</h2>
 
         <h2 className="text-center font-bold text-lg text-avista3 pb-2">
         <span>N2000 Per Adult</span><br />
