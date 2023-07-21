@@ -5,12 +5,14 @@ const WhatsAppChat = () => {
   const phoneNumber = '09126035876'; // Replace with your WhatsApp phone number
 
   const handleWhatsAppChat = () => {
-    let link = '';
     if (isMobile) {
       const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      let link = '';
       if (isIOS) {
-        link = `https://wa.me/${phoneNumber}`;
+        // For iOS devices, use the wa.me link with a prefixed '+'
+        link = `https://wa.me/+${phoneNumber}`;
       } else {
+        // For other mobile devices, use the regular WhatsApp API link format
         link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
       }
       window.open(link, '_blank');
