@@ -1,11 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { isMobile, isAndroid } from 'react-device-detect';
 
-const kitchen = () => {
+const WhatsAppChat = () => {
+  const phoneNumber = '09126035876'; // Replace with your WhatsApp phone number
+
+  const handleWhatsAppChat = () => {
+    let link = '';
+    if (isMobile && isAndroid) {
+      link = `https://wa.me/${phoneNumber}`;
+    } else {
+      link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+    }
+    window.open(link, '_blank');
+  };
+
   return (
-    <div>
-      AVISTA KITCHEN/FOODS/DRINKS
-    </div>
-  )
-}
+    <button
+      onClick={handleWhatsAppChat}
+      className="fixed bottom-4 p-4 bg-blue-500 z-40 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none"
+    >
+      <img
+        src="/images/whatsapplogo2.png"
+        alt="WhatsApp Chat"
+        className="w-12 h-12 rounded-full"
+      />
+    </button>
+  );
+};
 
-export default kitchen
+export default WhatsAppChat;

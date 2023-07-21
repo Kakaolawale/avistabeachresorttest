@@ -1,19 +1,20 @@
-
-
 import React from 'react';
-import { isMobile, isAndroid } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 
 const WhatsAppChat = () => {
   const phoneNumber = '09126035876'; // Replace with your WhatsApp phone number
 
   const handleWhatsAppChat = () => {
     let link = '';
-    if (isMobile && isAndroid) {
-      link = `https://wa.me/${phoneNumber}`;
-    } else {
-      link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+    if (isMobile) {
+      const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isIOS) {
+        link = `https://wa.me/${phoneNumber}`;
+      } else {
+        link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+      }
+      window.open(link, '_blank');
     }
-    window.open(link, '_blank');
   };
 
   return (
@@ -31,3 +32,6 @@ const WhatsAppChat = () => {
 };
 
 export default WhatsAppChat;
+
+
+
