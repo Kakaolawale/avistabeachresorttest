@@ -7,13 +7,15 @@ const WhatsAppChat = () => {
   const handleWhatsAppChat = () => {
     if (isMobile) {
       const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const internationalPhoneNumber = '+234' + phoneNumber; // Replace '+1' with the appropriate country code
+
       let link = '';
       if (isIOS) {
-        // For iOS devices, use the wa.me link with a prefixed '+'
-        link = `https://wa.me/+${phoneNumber}`;
+        // For iOS devices, use the international format without any special characters
+        link = `https://wa.me/${internationalPhoneNumber}`;
       } else {
         // For other mobile devices, use the regular WhatsApp API link format
-        link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+        link = `https://api.whatsapp.com/send?phone=${internationalPhoneNumber}`;
       }
       window.open(link, '_blank');
     }
@@ -34,6 +36,7 @@ const WhatsAppChat = () => {
 };
 
 export default WhatsAppChat;
+
 
 
 
