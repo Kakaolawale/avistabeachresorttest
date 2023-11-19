@@ -7,29 +7,43 @@ const RoomSectionSlides4 = () => {
     {
       name: 'Cup Shell',
       description: 'It comes with complimentary breakfast for 2. Complimentary wine, private cabana facing the ocean, private swiming pool and access to all beach facilities.',
-      image: '/images/avistabeach150k1.jpg',
-      price: 'N200,000',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1700430334/new4_gam2ds.jpg',
+      price: 'N250,000',
       ratings: 4.1,
     },
     {
       name: 'Cup Shell',
       description: 'It comes with complimentary breakfast for 2. Complimentary wine, private cabana facing the ocean, private swiming pool and access to all beach facilities.',
-      image: '/images/avistabeach150k2.jpg',
-      price: 'N200,000',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1700430331/new2_rvah42.jpg',
+      price: 'N250,000',
       ratings: 4.2,
     },
     {
       name: 'Cup Shell',
       description: 'It comes with complimentary breakfast for 2. Complimentary wine, private cabana facing the ocean, private swiming pool and access to all beach facilities.',
-      image: '/images/avistabeach150k3.jpg',
-      price: 'N200,000',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1700430330/new5_fyaz8x.jpg',
+      price: 'N250,000',
       ratings: 4.3,
     },
     {
       name: 'Cup Shell',
       description: 'It comes with complimentary breakfast for 2. Complimentary wine, private cabana facing the ocean, private swiming pool and access to all beach facilities.',
-      image: '/images/avistabeach150k4.jpg',
-      price: 'N200,000',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1700430328/new1_skp5mi.jpg',
+      price: 'N250,000',
+      ratings: 4.4,
+    },
+    {
+      name: 'Cup Shell',
+      description: 'It comes with complimentary breakfast for 2. Complimentary wine, private cabana facing the ocean, private swiming pool and access to all beach facilities.',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1700430328/new3_qtyy4s.jpg',
+      price: 'N250,000',
+      ratings: 4.4,
+    },
+    {
+      name: 'Cup Shell',
+      description: 'It comes with complimentary breakfast for 2. Complimentary wine, private cabana facing the ocean, private swiming pool and access to all beach facilities.',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1700430258/new7_raprjn.jpg',
+      price: 'N250,000',
       ratings: 4.4,
     },
   ];
@@ -53,7 +67,7 @@ const RoomSectionSlides4 = () => {
   return (
     <div className="relative mt-10 mx-2 mb-4 rounded-3xl font-bold text-avista3">
       <div className='text-center bg-avista2/50 backdrop-blur-xl rounded-3xl mx-20 font-extrabold tracking-tighter text-4xl'>
-        <h1>3 Units Of N200,000 ROOMS</h1>
+        <h1> Unit Of N250,000 ROOM</h1>
       </div>
 
       <div className="mt-8 mx-4">

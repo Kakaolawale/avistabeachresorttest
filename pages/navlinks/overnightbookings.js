@@ -125,8 +125,9 @@ official bank account. And finally send us a slip or prove of payment via the wh
       <RoomSectionSlides />
       
       <RoomSectionSlides3 />
-      <RoomSectionSlides4 />
+      
       <RoomSectionSlides5 />
+      <RoomSectionSlides4 />
       <RoomSectionSlides6 />
      
       <div className="mx-4 mb-4 font-bold text-base">
