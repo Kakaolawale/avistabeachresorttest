@@ -2,7 +2,7 @@ import React from 'react';
 import { isMobile } from 'react-device-detect';
 
 const WhatsAppChat = () => {
-  const phoneNumber = '09126035876'; // Replace with your WhatsApp phone number
+  const phoneNumber = '09126035876'; 
 
   const handleWhatsAppChat = () => {
     if (isMobile) {
@@ -11,7 +11,6 @@ const WhatsAppChat = () => {
 
       let link = '';
       if (isIOS) {
-        // For iOS devices, use the international format without any special characters
         link = `https://wa.me/${internationalPhoneNumber}`;
       } else {
         // For other mobile devices, use the regular WhatsApp API link format

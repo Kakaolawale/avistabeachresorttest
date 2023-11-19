@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from 'react';
-import RoomSection from '../../components/RoomSection';
 import RoomSectionSlides from '../../components/RoomSectionSlides';
 import RoomSectionSlides2 from '../../components/RoomSectionSlides2';
 import RoomSectionSlides3 from '../../components/RoomSectionSlides3';
 import RoomSectionSlides4 from '../../components/RoomSectionSlides4';
 import RoomSectionSlides5 from '../../components/RoomSectionSlides5';
-import WhatsAppChat from '../../components/WhatsAppChat';
+import RoomSectionSlides6 from '../../components/RoomSectionSlides6';
 import Link from 'next/link';
 
 
@@ -124,10 +123,11 @@ official bank account. And finally send us a slip or prove of payment via the wh
   return (
     <div className='mt-20 mx-4 bg-gradient-to-bl from-avista via-avista2 rounded-3xl sm:mb-30 pt-10'>
       <RoomSectionSlides />
-      <RoomSectionSlides2 />
+      
       <RoomSectionSlides3 />
       <RoomSectionSlides4 />
       <RoomSectionSlides5 />
+      <RoomSectionSlides6 />
      
       <div className="mx-4 mb-4 font-bold text-base">
         <h1 className="text-center mb-4 mt-2 font-extrabold text-lg bg-avista3 w-16 h-17 rounded-3xl">1</h1>
@@ -226,15 +226,14 @@ official bank account. And finally send us a slip or prove of payment via the wh
         className='text-avista2 px-4 font-bold rounded-lg'
       >
         <option value=''>Select Room Type</option>
-        <option value='Volute Shell N60,000'>Volute Shell-N60,000</option>
-        <option value='Auger Shell N60,000'>Auger Shell-N60,000</option>
-        <option value='Tulip Shell N80,000'>Tulip Shell-N80,000</option>
-        <option value='Olivia Shell N80,000'>Olivia Shell-N80,000</option>
-        <option value='Abalone Shell 100,000'>Abalone Shell-100,000</option>
-        <option value='Drupe Shell 100,000'>Drupe Shell-100,000</option>
-        <option value='Cup Shell 150,000'>Cup Shell-150,000</option>
-        <option value='Turbo 200,000'>Turbo Shell-200,000</option>
-        <option value='Scallop 200,000'>Scallop Shell-200,000</option>
+        <option value='Volute Shell N80,000'>Volute Shell-N80,000</option>
+        <option value='Auger Shell N80,000'>Auger Shell-N80,000</option>
+        <option value='Tulip Shell N100,000'>Tulip Shell-N100,000</option>
+        <option value='Olivia Shell N100,000'>Olivia Shell-N100,000</option>
+        <option value='Abalone Shell N200,000'>Abalone Shell-N200,000</option>
+        <option value='Drupe Shell N200,000'>Drupe Shell-N200,000</option>
+        <option value='Cup Shell N250,000'>Cup Shell-N250,000</option>
+        <option value='Turbo N400,000'>Turbo Shell-N400,000</option>
       </select>
     </label>
     <div className='bg-avista rounded-xl my-4 ml-10 md:mx-20'>

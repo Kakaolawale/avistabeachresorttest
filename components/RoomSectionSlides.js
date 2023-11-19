@@ -8,49 +8,49 @@ const RoomSectionSlides = () => {
       name: 'Auger Shell',
       description: 'It comes with complimentary breakfast for 2.It an ocean view room with access to all beach facilities.',
       image: '/images/avistabeach60k1.jpg',
-      price: 'N60,000',
+      price: 'N80,000',
       ratings: 4.1,
     },
     {
       name: 'Volute Shell',
       description: 'It comes with complimentary breakfast for 2.It an ocean view room and access to all beach facilities.',
       image: '/images/avistabeach60k2.jpg',
-      price: 'N60,000',
+      price: 'N80,000',
       ratings: 4.2,
     },
     {
       name: 'Volute Shell',
       description: 'It comes with complimentary breakfast for 2.It an ocean view room and access to all beach facilities.',
       image: '/images/avistabeach60k3.jpg',
-      price: 'N60,000',
+      price: 'N80,000',
       ratings: 4.3,
     },
     {
       name: 'Volute Shell',
       description: 'It comes with complimentary breakfast for 2.It an ocean view room and access to all beach facilities.',
       image: '/images/avistabeach60k4.jpg',
-      price: 'N60,000',
+      price: 'N80,000',
       ratings: 4.4,
     },
     {
       name: 'Volute Shell',
       description: 'It comes with complimentary breakfast for 2.It an ocean view room and access to all beach facilities.',
       image: '/images/avistabeach60k5.jpg',
-      price: 'N60,000',
+      price: 'N80,000',
       ratings: 4.5,
     },
     {
       name: 'Volute Shell',
       description: 'It comes with complimentary breakfast for 2.It an ocean view room and access to all beach facilities.',
       image: '/images/avistabeach60k6.jpg',
-      price: 'N60,000',
+      price: 'N80,000',
       ratings: 4.6,
     },
     {
       name: 'Volute Shell',
       description: 'It comes with complimentary breakfast for 2.It an ocean view room and access to all beach facilities.',
       image: '/images/avistabeach60k7.jpg',
-      price: 'N60,000',
+      price: 'N80,000',
       ratings: 4.7,
     },
   ];
@@ -74,7 +74,7 @@ const RoomSectionSlides = () => {
   return (
     <div className="relative mt-4 mx-2 mb-4 rounded-3xl font-bold text-avista3">
       <div className='text-center rounded-3xl bg-avista2/50 backdrop-blur-xl mx-20 font-extrabold tracking-tighter text-4xl'>
-        <h1>6 Units Of N60,000 ROOMS</h1>
+        <h1>7 Units Of N80,000 ROOMS</h1>
       </div>
 
       <div className="mt-8 mx-4">

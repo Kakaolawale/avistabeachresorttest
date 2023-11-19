@@ -96,11 +96,11 @@ const beachhutsbookings = () => {
       <div className="max-w-4xl mx-4 mt-8 bg-gradient-to-br from-avista via-avista2 rounded-xl pt-20  px-8 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-avista3 text-center tracking-tight mb-8">BEACH HUTS BOOKING</h2>
         <h2 className="text-center font-bold text-lg text-avista3 pb-2">
-        N25,000 From 7AM-7PM Per Hut
+        N35,000 From 7AM-7PM Per Hut
         </h2>
         <hr className="text-avista3" />
         <h2 className="text-center pb-4 text-avista3"> 
-        N25,000 From 7PM-7AM Per Hut
+        N35,000 From 7PM-7AM Per Hut
        </h2>
        <h2 className="text-center pb-4 text-avista3"> 
        Fill the booking form below to make reservation.
