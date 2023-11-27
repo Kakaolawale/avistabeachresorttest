@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Link from "next/link"
+
 
 
 const RoomSectionSlides5 = () => {
@@ -7,63 +7,84 @@ const RoomSectionSlides5 = () => {
     {
       name: 'Turbo Shell',
       description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, private swimming area, breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-      image: '/images/turbo.jpg',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088454/WhatsApp_Image_2023-11-25_at_06.39.10_7_ma4l49.jpg',
       price: 'N400,000',
       ratings: 4.1,
     },
     {
       name: 'Turbo Shell',
       description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, private swimming area, breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-      image: '/images/turbo.jpg',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088454/WhatsApp_Image_2023-11-25_at_06.39.10_3_uodcas.jpg',
       price: 'N400,000',
       ratings: 4.2,
     },
     {
       name: 'Turbo Shell',
       description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, private swimming area, breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-      image: '/images/turbo.jpg',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088451/WhatsApp_Image_2023-11-25_at_06.39.10_9_d6qvkc.jpg',
       price: 'N400,000',
       ratings: 4.3,
     },
     {
       name: 'Turbo Shell',
       description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, private swimming area, breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-      image: '/images/turbo.jpg',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088454/WhatsApp_Image_2023-11-25_at_06.39.10_4_takiz6.jpg',
       price: 'N400,000',
       ratings: 4.4,
     },
     {
       name: 'Turbo Shell',
       description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, private swimming area, breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-      image: '/images/turbo.jpg',
+      image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088454/WhatsApp_Image_2023-11-25_at_06.39.10_8_xfyui0.jpg',
       price: 'N400,000',
       ratings: 4.4,
     },
     {
         name: 'Scallop Shell',
         description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, ocean view room(upstairs), breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-        image: '/images/scallop.jpg',
+        image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088443/WhatsApp_Image_2023-11-25_at_06.39.10_25_souocu.jpg',
         price: 'N400,000',
         ratings: 4.1,
       },
       {
         name: 'Scallop Shell',
         description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, ocean view room(upstairs), breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-        image: '/images/scallop2.jpg',
+        image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088453/WhatsApp_Image_2023-11-25_at_06.39.10_gisdsf.jpg',
         price: 'N400,000',
         ratings: 4.2,
       },
       {
         name: 'Scallop Shell',
         description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, ocean view room(upstairs), breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-        image: '/images/scallop3.jpg',
+        image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088447/WhatsApp_Image_2023-11-25_at_06.39.10_20_oyqlmg.jpg',
         price: 'N400,000',
         ratings: 4.3,
       },
       {
         name: 'Scallop Shell',
         description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, ocean view room(upstairs), breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
-        image: '/images/scallop4.jpg',
+        image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088449/WhatsApp_Image_2023-11-25_at_06.39.10_17_u9w9r8.jpg',
+        price: 'N400,000',
+        ratings: 4.4,
+      },
+      {
+        name: 'Scallop Shell',
+        description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, ocean view room(upstairs), breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
+        image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088448/WhatsApp_Image_2023-11-25_at_06.39.10_10_k3nmxp.jpg',
+        price: 'N400,000',
+        ratings: 4.4,
+      },
+      {
+        name: 'Scallop Shell',
+        description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, ocean view room(upstairs), breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
+        image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088447/WhatsApp_Image_2023-11-25_at_06.39.10_5_ne13wk.jpg',
+        price: 'N400,000',
+        ratings: 4.4,
+      },
+      {
+        name: 'Scallop Shell',
+        description: 'It comes with Jacuzzi, private swimming pool, private born fire, private seating area, ocean view room(upstairs), breakfast for 2, a bottle of red wine on arrival with options for all inclussive.',
+        image: 'https://res.cloudinary.com/dtajzdkii/image/upload/v1701088443/WhatsApp_Image_2023-11-25_at_06.39.10_26_hxfzyn.jpg',
         price: 'N400,000',
         ratings: 4.4,
       },
