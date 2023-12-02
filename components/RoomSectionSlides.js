@@ -74,7 +74,7 @@ const RoomSectionSlides = () => {
   return (
     <div className="relative mt-4 mx-2 mb-4 rounded-3xl font-bold text-avista3">
       <div className='text-center rounded-3xl bg-avista2/50 backdrop-blur-xl mx-20 font-extrabold tracking-tighter text-4xl'>
-        <h1>7 Units Of N80,000 ROOMS</h1>
+        <h1>6 Units Of N80,000 ROOMS</h1>
       </div>
 
       <div className="mt-8 mx-4">

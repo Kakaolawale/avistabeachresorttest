@@ -123,9 +123,7 @@ official bank account. And finally send us a slip or prove of payment via the wh
   return (
     <div className='mt-20 mx-4 bg-gradient-to-bl from-avista via-avista2 rounded-3xl sm:mb-30 pt-10'>
       <RoomSectionSlides />
-      
       <RoomSectionSlides3 />
-      
       <RoomSectionSlides5 />
       <RoomSectionSlides4 />
       <RoomSectionSlides6 />
@@ -231,10 +229,11 @@ official bank account. And finally send us a slip or prove of payment via the wh
         <option value='Auger Shell N80,000'>Auger Shell-N80,000</option>
         <option value='Tulip Shell N100,000'>Tulip Shell-N100,000</option>
         <option value='Olivia Shell N100,000'>Olivia Shell-N100,000</option>
-        <option value='Abalone Shell N200,000'>Abalone Shell-N200,000</option>
-        <option value='Drupe Shell N200,000'>Drupe Shell-N200,000</option>
-        <option value='Cup Shell N250,000'>Cup Shell-N250,000</option>
-        <option value='Turbo N400,000'>Turbo Shell-N400,000</option>
+        <option value='Cup Shell N200,000'>Cup Shell-N200,000</option>
+        <option value='Turbo Shell N200,000'>Turbo Shell-N200,000</option>
+        <option value='Scallop Shell N200,000'>Scallop Shell-N200,000</option>
+        <option value='Jingle Shell N250,000'>Jingle Shell-N250,000</option>
+        <option value='Cowry N400,000'>Cowry Shell-N400,000</option>
       </select>
     </label>
     <div className='bg-avista rounded-xl my-4 ml-10 md:mx-20'>
