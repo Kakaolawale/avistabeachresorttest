@@ -19,6 +19,7 @@ import VerticalLine from '../components/VerticalLine'
 import CircleVector from '../components/CircleVector'
 import { motion } from "framer-motion";
 import MapSection from '../components/MapSection'
+import ChristmasBanner from '../components/ChristmasBanner'
 
 export default function Home() {
   
@@ -41,6 +42,7 @@ export default function Home() {
       >
       <div className='mt-16 md:mt-0'>
       <VideoBanner />
+      <ChristmasBanner />
       <PictureSlider />
       <CanteenSlider />
       <div className="flex items-center mt-4 justify-center h-48">

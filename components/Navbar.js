@@ -35,7 +35,7 @@ function Navbar() {
           <div className={`mt-top-adjusted ${navbar ? 'adjust-down' : ''}`}>
             <div className="flex items-center justify-between py-5">
               <a href="/" className="flex items-center">
-                <Image src="/images/avistalogowhite.png" width={80} height={30} alt="Avista Beach Resort Logo" />
+                <Image src="/images/avistalogochristmas.png" width={60} height={50} alt="Avista Beach Resort Logo" />
               </a>
               <div className="md:hidden text-avista3">
                 <button className="pt-2 rounded-md outline-none focus:border-avista3 focus:border" onClick={handleClick}>
