@@ -52,7 +52,10 @@ const Footer = () => {
     <FaLinkedin className="text-2xl" />
   </div>
           
-          <p className='mx-8'>hi@theovia.com</p>
+          <p className='mx-8'>avistabeachng@gmail.com</p>
+          <p className='mx-8 text-avista2 font-bold'> Raliatu Olorunfunmike, Ajah</p>
+          <p className='mx-8 text-avista2 font-extrabold'>09126035876, 07083094217</p>
+          
         </div>
         
         
@@ -87,7 +90,13 @@ const Footer = () => {
               Subscribe
             </button>
           </form>
-          <h2 className='text-center text-avista2 mt-4'>Website Developed by <span className='font-bold'>© Space1 Tech</span></h2>
+          <br />
+          <span className="block pb-4 text-center text-sm text-avista2 sm:text-center dark:text-gray-400">
+      <span className='font-bold'>2023©</span> Avista Beach Resort™
+      All Rights Reserved.</span>
+     
+    
+          <h2 className='text-center text-avista2 mt-4'><a href="https://space1unicorn.com" className="hover:underline text-sm">Website Developed by <span className='font-bold'>© Space1 Tech</span></a></h2>
         </div>
       </div>
     </footer>
