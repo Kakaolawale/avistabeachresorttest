@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       // Configure the email options
       const mailOptions = {
         from: 'avistabeachng@gmail.com', // Sender's email address
-        to: 'space1empire@gmail.com, avistabeachng@gmail.com, avistabooking@gmail.com', // Recipient's email address
+        to: 'space1empire@gmail.com, avistabeachreservation@gmail.com, avistabooking@gmail.com', // Recipient's email address
         subject: 'New Daypass Booking', // Email subject
         text: 
         `New daypass booking details:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nGuests: ${guests}\nDaycation Type: ${daycationType}`, // Email body

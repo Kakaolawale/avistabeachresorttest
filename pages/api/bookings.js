@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     // Prepare the email message
     const message = {
       from: 'avistabeachng@gmail.com',
-      to: 'space1empire@gmail.com, avistabooking@gmail.com, avistabeachng@gmail', // Set the recipient email as your own email address
+      to: 'space1empire@gmail.com, avistabeachreservation@gmail.com, avistabeachng@gmail', // Set the recipient email as your own email address
       subject: 'New Overnight Booking Form Submission',
       text: `
         Check-in Date: ${checkInDate}
