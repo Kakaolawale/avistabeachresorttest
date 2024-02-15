@@ -42,7 +42,6 @@ export default function Home() {
       >
       <div className='mt-16 md:mt-0'>
       <VideoBanner />
-      <ChristmasBanner />
       <PictureSlider />
       <CanteenSlider />
       <div className="flex items-center mt-4 justify-center h-48">

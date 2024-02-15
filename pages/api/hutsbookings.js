@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     // Compose the email message
     const message = {
       from: 'avistabeachng@gmail.com',
-      to: 'space1empire@gmail.com, avistabeachng@gmail.com, avistabeachreservation@gmail.com',
+      to: 'dukeofindustry@gmail.com, space1empire@gmail.com, avistabeachng@gmail.com, avistabeachreservation@gmail.com',
       subject: 'New Huts Booking',
       text: `
       Name: ${name}
