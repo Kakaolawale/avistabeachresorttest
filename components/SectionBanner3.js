@@ -33,7 +33,7 @@ const SectionBanner3 = () => {
                             </svg>
                         </div>
                         <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                            Sellect a service or sellect a booking
+                            Select a service or sellect a booking
                         </p>
                     </li>
                     <li className="flex items-start lg:col-span-1">
