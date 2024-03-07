@@ -33,7 +33,7 @@ const SectionBanner3 = () => {
                             </svg>
                         </div>
                         <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                            Select a service or sellect a booking
+                            Select a service or booking of your choice
                         </p>
                     </li>
                     <li className="flex items-start lg:col-span-1">
@@ -44,7 +44,7 @@ const SectionBanner3 = () => {
                             </svg>
                         </div>
                         <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                            Chose categories via the link in the navbar
+                            Chose a category via the link in the navbar e.g Daypass Booking, Overnight Booking
                         </p>
                     </li>
                     <li className="flex items-start lg:col-span-1">
@@ -55,7 +55,7 @@ const SectionBanner3 = () => {
                             </svg>
                         </div>
                         <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                            Book reservation for your selection
+                            Make reservation for your selection
                         </p>
                     </li>
                     <li className="flex items-start lg:col-span-1">
@@ -66,7 +66,7 @@ const SectionBanner3 = () => {
                             </svg>
                         </div>
                         <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                            Send your reservation to our team via the book now button
+                            Send your reservation to our team via the book now button and click the WhatsApp button icon at the bottom left of the page
                         </p>
                     </li>
                     <li className="flex items-start lg:col-span-1">
